@@ -68,12 +68,8 @@ SAMR30M supports IEEE 802.15.4 PHY based protocols, for instance in particular M
     - Sensors set-up as “End Device”
     - Sensor 1 acquires the ambient temperature 
     - Sensor 2 acquires the vibration of arm robot, to implement predictive maintenance 
-</br>
-<img src="Doc/demo_network.png" alt="drawing" width="560"/>
-</br>
-
+<img src="Doc/demo_network.png" alt="drawing" width="560"/></br>
 Built for Industry 4.0, this demo is covering 4 use cases:</br>
-
 - Use case 1 - Standalone mode (OFF Line) : application data pushed to SmartPhone (Wifi Gateway is set in SoftAP mode) while sensor data gets collected via robust SubGHz Mesh network (see MiWi Mesh based on 802.15.4)
 </br><img src="Doc/architecture_use_case_1.png" alt="drawing" width="560"/></br>
 </br><img src="Doc/architecture_use_case_1_dashboard.png" alt="drawing" width="560"/></br>
@@ -88,11 +84,10 @@ Built for Industry 4.0, this demo is covering 4 use cases:</br>
 
 - **Robust by design**</br>
 Multiple options (Wireless SOM, SOM, discrete approach with certified module or full discrete implementation) mitigate your risk, proposing you need based on your application constraints (time to market, RF expertise, cost target…). 
-</br>
 This approach is reinforced by reference implementation and reference design provided by Microchip. Copy paste, you can’t make it easier. Microchip also have Chip Down Package, for customers using WILC1000/WILC3000 QFN rather than the certified modules.
 </br>
 <img src="Doc/robust_and_secure.png" alt="drawing" width="570"/>
-</br></br>
+</br>
 SOM remains good strategy to get started in no time, allowing fast prototyping and shorten your learning curve. And in such mitigate one more time risk.
 <img src="Doc/som_design.png" alt="drawing" width="570"/>
 
@@ -132,7 +127,6 @@ Solution is developed with full system approach, to ensure that every products i
     - Secure Element solution: <a href="https://www.microchip.com/atecc608a" target="_blank">ATECC608A</a>
         - <a href="https://github.com/MicrochipTech/cryptoauthlib" target="_blank">CryptoAuthLib for a Linux project</a>
         - <a href="https://github.com/MicrochipTech/cryptoauthlib/wiki/Greengrass-HSI" target="_blank">AWS IoT Greengrass Hardware Security Interface (HSI)</a>
-</br>
 </br>
 
 - **Because a Secure Element matters!**</br>
@@ -186,10 +180,9 @@ AWS Greengrass is a software that extends AWS Cloud capabilities to local device
 </br>
 <img src="Doc/greengrass_topview.png" alt="drawing" width="570"/> </br>
 <img src="Doc/greengrass_security.png" alt="drawing" width="570"/></br>
-</br>
 Check <a href="https://docs.aws.amazon.com/greengrass/latest/developerguide/what-is-gg.html" target="_blank">here</a> for more information</br>
 Check also this nice <a href="http://ww1.microchip.com/downloads/en/Appnotes/Getting-Started-with-AWS-Greengrass-on-SAMA5D2-Application-Note-DS00003170A.pdf" target="_blank">Application note AN3170</a>, helping you getting started with AWS Greengrass on Microchip SAMAD2 MPU</br>
-<img src="Doc/an3170.png" alt="drawing" width="400"/> </br>
+<img src="Doc/an3170.png" alt="drawing" width="400"/>
 
 ### Cloud solutions<a name="step2c"></a>
 This demo is using AWS-IoT and AWS-Greengrass but we are not limited to one cloud provider. 
@@ -281,19 +274,19 @@ And visit Microchip Github for a complete MiWi Mesh demo to monitor temperatures
 
 - <a href="https://shop.sb-components.co.uk/products/piarm-the-diy-robotic-arm-for-raspberry-pi?variant=27857777098835" target="_blank">1x PiArm Robot with motor control board</a></br>
 “PiArm”, DIY Robotic arm supporting Raspberry Pi from SB Components Ltd</br>
-PiArm is a Raspberry Pi based DIY robotic arm outfitted with 6-axis digital computerized servo motors and 360 degrees of rotation liberation designed and developed for kids, makers, techies, and everyone.</br>
-    - PiArm features:</br>
-        - Fully metallic body</br>
-        - Equipped with 6-axis digital servo meters and 360 degrees of rotation system.</br>
-        - Easy to assemble and can be controlled by multiple devices like laptops, smartphones, joystick, etc.</br>
-        - Based on the Python language and the open-source code is available for secondary development.</br>
-        - Compatible with all versions of Raspberry Pi such as 4B, 3B+, 3, 2, A+, B, Zero W, Zero, etc.</br>
-    - Servo Features:</br>
-        - Python-based code capable of running on any platform like Linux or Windows.</br>
-	    - Connect the shield through a couple of options: through USB or through GPIO.</br>
-        - Power to provide a single power source to the Raspberry Pi and the PiArm.</br></br>
+PiArm is a Raspberry Pi based DIY robotic arm outfitted with 6-axis digital computerized servo motors and 360 degrees of rotation liberation designed and developed for kids, makers, techies, and everyone.
+    - PiArm features:
+        - Fully metallic body
+        - Equipped with 6-axis digital servo meters and 360 degrees of rotation system.
+        - Easy to assemble and can be controlled by multiple devices like laptops, smartphones, joystick, etc.
+        - Based on the Python language and the open-source code is available for secondary development.
+        - Compatible with all versions of Raspberry Pi such as 4B, 3B+, 3, 2, A+, B, Zero W, Zero, etc.
+    - Servo Features:
+        - Python-based code capable of running on any platform like Linux or Windows.
+	    - Connect the shield through a couple of options: through USB or through GPIO.
+        - Power to provide a single power source to the Raspberry Pi and the PiArm.
 <img src="Doc/piarm.png" alt="drawing" width="270"/>
-<img src="Doc/piarm_dimensions.png" alt="drawing" width="270"/> </br>
+<img src="Doc/piarm_dimensions.png" alt="drawing" width="270"/>
 
 - <a href="https://www.amazon.fr/Microsoft-LifeCam-HD-3000-Webcam-720p/dp/B0096M4QOY/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=lifecam+microsoft+5000+HD&qid=1581350549&sr=8-1" target="_blank">1x LifeCam HD 3000 USB Camera from Microsoft</a></br>
 This demo uses this solution from Microsoft but any USB webcam from the market can do the job.</br>
@@ -349,25 +342,17 @@ In this demo, we will program these boards with true routing Mesh firmware from 
 
 We started building the first robot arm over a prototype platform.</br>
 
-<img src="Doc/robot_arm_box.png" alt="drawing" width="400"/></br>
+<img src="Doc/robot_arm_box.png" alt="drawing" width="320"/></br>
 
 <img src="Doc/robot_prototype_01.png" alt="drawing" width="200"/>
 <img src="Doc/robot_prototype_02.png" alt="drawing" width="200"/></br>
-
 And validated the demo ...</br>
-
 <img src="Doc/robot_prototype_03.png" alt="drawing" width="200"/>
 <img src="Doc/robot_prototype_04.png" alt="drawing" width="200"/>
-<img src="Doc/robot_prototype_05.png" alt="drawing" width="200"/>
-</br>
-
+<img src="Doc/robot_prototype_05.png" alt="drawing" width="200"/></br>
 See one of the prototype in action:</br>
-
-<a href="https://youtu.be/sZ-LExc-ZR4" target="_blank"><img src="Doc/robot_prototype_video.png" width="240" height="180" border="10" /></a>
-</br>
-
+<a href="https://youtu.be/sZ-LExc-ZR4" target="_blank"><img src="Doc/robot_prototype_video.png" width="240" height="180" border="10" /></a></br>
 Then from prototype to real demo, we integrated the whole solution into final casing.</br>
-
 <img src="Doc/final_demo_casing_01.png" alt="drawing" width="200"/>
 <img src="Doc/final_demo_casing_02.png" alt="drawing" width="200"/>
 <img src="Doc/final_demo_casing_03.png" alt="drawing" width="400"/>
