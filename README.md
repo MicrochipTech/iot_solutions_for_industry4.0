@@ -108,10 +108,8 @@ Microchip extensively tests silicon, modules & firmware for interoperability and
 <img src="Doc/atwilc3000_certifications.png" alt="drawing" width="400"/>
 
 - **End to end Linux approach for all Microchip products**</br>
-<img src="Doc/smart_connected_secure.png" alt="drawing" width="400"/>
-</br>
+<img src="Doc/smart_connected_secure.png" alt="drawing" width="400"/></br>
 Solution is developed with full system approach, to ensure that every products interact with highest performance, security and robustness for Linux application. Connecting all dots, making your system Smart, Secure and Connected.
-
     - Comprehensive <a href="https://www.microchip.com/mpu" target="_blank">MPU portfolio</a>
         - Dedicated internal Linux application team
 		- Microchip is committed to Linux Kernel mainlining (In-house maintainer)
@@ -416,13 +414,9 @@ Checkout the application source code located into Software/Linux_Python_Applicat
 
 From Software/MiWi.zip package, you are getting two Atmel Studio 7.0 projects.</br>
 
-- ED_XMOD1 (End-Device)</br>
-Project derived from ASFv3.47 MiWi Mesh EndDevice - WSN Demo Application (SAM R30 Module Xplained Pro)
+- ED_XMOD1 (End-Device): Project derived from ASFv3.47 MiWi Mesh EndDevice - WSN Demo Application (SAM R30 Module Xplained Pro)
+- PAN_CORD_MOD (Pan-Coordinator): Project derived from ASFv3.47 MiWi Mesh PanCoordinator - WSN Demo Application (SAM R30 Module Xplained Pro)
 </br>
-- PAN_CORD_MOD (Pan-Coordinator)</br>
-Project derived from ASFv3.47 MiWi Mesh PanCoordinator - WSN Demo Application (SAM R30 Module Xplained Pro)
-</br>
-
 The pan coordinator device creates the network and the end device perform an association in order to join the network.</br>
 The end device transmits periodically the temperature information to the pan coordinator.
 
