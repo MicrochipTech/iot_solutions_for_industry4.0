@@ -75,18 +75,14 @@ SAMR30M supports IEEE 802.15.4 PHY based protocols, for instance in particular M
 Built for Industry 4.0, this demo is covering 4 use cases:</br>
 
 - Use case 1 - Standalone mode (OFF Line) : application data pushed to SmartPhone (Wifi Gateway is set in SoftAP mode) while sensor data gets collected via robust SubGHz Mesh network (see MiWi Mesh based on 802.15.4)
-</br>
-![](Doc/architecture_use_case_1.png)</br>
-![](Doc/architecture_use_case_1_dashboard.png)</br>
+</br><img src="Doc/architecture_use_case_1.png" alt="drawing" width="560"/></br>
+</br><img src="Doc/architecture_use_case_1_dashboard.png" alt="drawing" width="560"/></br>
 - Use case 2 - ON Line mode with AWS IoT : application data is pushed to the Cloud using AWS IoT (Wifi Gateway is set in Station mode). No change for sensor network compared to use case 1 : data gets collected via robust SubGHz Mesh network (see MiWi Mesh based on 802.15.4)
-</br>
-![](Doc/architecture_use_case_2.png)</br>
+</br><img src="Doc/architecture_use_case_2.png" alt="drawing" width="560"/></br>
 - Use case 3 - Concurrent mode (Wifi as SoftAP and Station mode): Wifi Gateway supports and operates simultaneously Station and SoftAP modes, aggregating Use cases 1 and 2. No change for sensor network compared to use cases 1 and 2 : data gets collected via robust SubGHz Mesh network (see MiWi Mesh based on 802.15.4)
-</br>
-![](Doc/architecture_use_case_3.png)</br>
+</br><img src="Doc/architecture_use_case_3.png" alt="drawing" width="560"/></br>
 - Use case 4 - ON Line mode with AWS Greengrass: robust connectivity taking full leverage of AWS Greengrass. Here, demonstrator is connected to the Cloud through Ethernet wired connectivity. Sensors now communicate to the Gateway thru Wifi
-</br>
-![](Doc/architecture_use_case_4.png)</br>
+</br><img src="Doc/architecture_use_case_4.png" alt="drawing" width="560"/></br>
 
 ### First and foremost, made secure and robust<a name="step2b"></a>
 
@@ -106,98 +102,93 @@ Microchip extensively tests silicon, modules & firmware for interoperability and
     - SQA & regression testing prior to release</br>
     - Gauntlet automated testing with 57 access points</br>
         - New APs added quarterly</br>
-        - Full list here www.microchip.com/wi-fi-interoperability</br>
+        - Full list <a href="https://www.microchip.com/wi-fi-interoperability" target="_blank">here</a></br>
 <img src="Doc/wifi_interop.png" alt="drawing" width="400"/>
-</br>
-</br>
-
-    - And Microchip certifies its WiFi solutions, see <a href="https://www.microchip.com/wwwproducts/en/ATWILC1000" target="_blank">ATWILC1000 Home Page</a>
-	and <a href="https://www.microchip.com/wwwproducts/en/ATWILC3000" target="_blank">ATWILC3000 Home Page</a>
-</br>
+    - And Microchip certifies its WiFi solutions, see <a href="https://www.microchip.com/wwwproducts/en/ATWILC1000" target="_blank">ATWILC1000 Home Page</a> and <a href="https://www.microchip.com/wwwproducts/en/ATWILC3000" target="_blank">ATWILC3000 Home Page</a></br>
 <img src="Doc/atwilc3000_certifications.png" alt="drawing" width="400"/>
-	
 
 - **End to end Linux approach for all Microchip products**</br>
 <img src="Doc/smart_connected_secure.png" alt="drawing" width="400"/>
 </br>
-Solution is developed with full system approach, to ensure that every products interact with highest performance, security and robustness for Linux application. Connecting all dots, making your system Smart, Secure and Connected
+Solution is developed with full system approach, to ensure that every products interact with highest performance, security and robustness for Linux application. Connecting all dots, making your system Smart, Secure and Connected.
+
+    - Comprehensive <a href="https://www.microchip.com/mpu" target="_blank">MPU portfolio</a>
+        - Dedicated internal Linux application team
+		- Microchip is committed to Linux Kernel mainlining (In-house maintainer)
+        - Target Long-Term Support (LTS) Linux releases
+		- Support official LTS kernels for customer peace of mind
+		- All Microchip MPUs in production are supported on new kernels
+        - Regular posted releases and updates
+        - Linux kernel, Yocto / Buildroot and OpenWRT distributions maintained and updated
+        - Bug fixes, patches, graphical layers, Python, demo images for all evaluation boards available
+        - Community fixes bugs, adds enhancements between releases
+        - Free Linux® kernel 4.14.x, see <a href="https://www.linux4SAM.com" target="_blank">linux4SAM.com</a>
+    - Wifi portfolio with dedicated <a href="https://www.microchip.com/mpu" target="_blank">Linux ecosystem</a>
+        - ATWILC1000/ATWILC 3000 Wi-Fi Link Controller Linux User Guide
+        - Linux Driver for WILC1000 & WILC3000
+        - ATWILC Devices Linux Porting Guide
+        - ATWILC1000/3000 Wi-Fi Link Controller Linux Driver Release Notes v15.3
+        - ATWILC1000-SD Evaluation Kit Design Files
+        - ATWILC3000-SD Evaluation Kit Design Files
+        - <a href="www.microchip.com/design-centers/wireless-connectivity/embedded-wi-fi/get-started-with-wi-fi-for-linux" target="_blank">Wifi Getting Started for Linux</a>
+    - Secure Element solution: <a href="https://www.microchip.com/atecc608a" target="_blank">ATECC608A</a>
+        - <a href="https://github.com/MicrochipTech/cryptoauthlib" target="_blank">CryptoAuthLib for a Linux project</a>
+        - <a href="https://github.com/MicrochipTech/cryptoauthlib/wiki/Greengrass-HSI" target="_blank">AWS IoT Greengrass Hardware Security Interface (HSI)</a>
 </br>
-    - Comprehensive MPU portfolio: www.microchip.com/mpu </br>
-        - Dedicated internal Linux application team</br>
-		- Microchip is committed to Linux Kernel mainlining (In-house maintainer)</br>
-        - Target Long-Term Support (LTS) Linux releases</br>
-		- Support official LTS kernels for customer peace of mind</br>
-		- All Microchip MPUs in production are supported on new kernels</br>
-        - Regular posted releases and updates</br>
-        - Linux kernel, Yocto / Buildroot and OpenWRT distributions maintained and updated</br>
-        - Bug fixes, patches, graphical layers, Python, demo images for all evaluation boards available</br>
-        - Community fixes bugs, adds enhancements between releases</br>
-        - Free Linux® kernel 4.14.x, see <a href="https://www.linux4SAM.com" target="_blank">linux4SAM.com</a></br>
-    - Wifi portfolio with dedicated <a href="https://www.microchip.com/mpu" target="_blank">Linux ecosystem</a></br>
-        - ATWILC1000/ATWILC 3000 Wi-Fi Link Controller Linux User Guide</br>
-        - Linux Driver for WILC1000 & WILC3000</br>
-        - ATWILC Devices Linux Porting Guide</br>
-        - ATWILC1000/3000 Wi-Fi Link Controller Linux Driver Release Notes v15.3</br>
-        - ATWILC1000-SD Evaluation Kit Design Files</br>
-        - ATWILC3000-SD Evaluation Kit Design Files</br>
-        - <a href="www.microchip.com/design-centers/wireless-connectivity/embedded-wi-fi/get-started-with-wi-fi-for-linux" target="_blank">Wifi Getting Started for Linux</a></br>
-    - Secure Element solution: <a href="https://www.microchip.com/atecc608a" target="_blank">ATECC608A</a></br>
-        - <a href="https://github.com/MicrochipTech/cryptoauthlib" target="_blank">CryptoAuthLib for a Linux project</a></br>
-        - <a href="https://github.com/MicrochipTech/cryptoauthlib/wiki/Greengrass-HSI" target="_blank">AWS IoT Greengrass Hardware Security Interface (HSI)</a></br>
+</br>
 
 - **Because a Secure Element matters!**</br>
-With Trust Platform, leverage Microchip  Secure Manufacturing Infrastructure to Securely Provision Credentials in Your Products.</br>
-For deployments of as few as ten units to up to many thousands of devices, Microchip Trust Platform is a cost-effective and flexible solution for onboarding our secure elements in your design and accelerating your product’s time to market.</br>
-The Trust Platform is composed of a family of pre-provisioned, pre-configured or fully customizable secure elements. </br>
-Credentials are generated inside each secure element’s boundary by leveraging our Hardware Secure Modules (HSMs) that are installed in Microchip factories. </br>
-</br>
-It makes Security simple and easy to implement. Available and affordable to all applications even with low volume.</br>
-With an end to end Linux approach, Microchip solution provides all hardware reference design and firmware drivers, to get started your application in no time.</br>
+    - With Trust Platform, leverage Microchip  Secure Manufacturing Infrastructure to Securely Provision Credentials in Your Products.
+For deployments of as few as ten units to up to many thousands of devices, Microchip Trust Platform is a cost-effective and flexible solution for onboarding our secure elements in your design and accelerating your product’s time to market.
+The Trust Platform is composed of a family of pre-provisioned, pre-configured or fully customizable secure elements.
+Credentials are generated inside each secure element’s boundary by leveraging our Hardware Secure Modules (HSMs) that are installed in Microchip factories.
+    - It makes Security simple and easy to implement. Available and affordable to all applications even with low volume.
+With an end to end Linux approach, Microchip solution provides all hardware reference design and firmware drivers, to get started your application in no time.
 So there is no excuse to bring security to your device.
-</br>
-The Trust Platform offers three tiers of secure elements—Trust&GO, TrustFLEX and TrustCUSTOM—to provide you with the options and flexibility to meet the requirements of your company’s security model.
-</br>
-![](Doc/trustplatform.png)</br>
+    - The Trust Platform offers three tiers of secure elements—Trust&GO, TrustFLEX and TrustCUSTOM—to provide you with the options and flexibility to meet the requirements of your company’s security model.
+
+<img src="Doc/trustplatform.png" alt="drawing" width="720"/></br>
+
 SAMA5D27-WLSOM1 : <a href="https://microchipdeveloper.com/authentication:trust-platform" target="_blank">Linux drivers with Complete Stack solution available</a></br>
 <img src="Doc/wireless_som_ecc.png" alt="drawing" width="400"/>
+</br>
 
 - **Because a Secure MPU matters too!**</br>
 Comprehensive security feature is embedded inside the ATSAMA5D27 including:</br>
-    - TrustZone and CoreTEE</br>
-    - Environmental Monitors (PCI)</br>
-    - PCI Pre-evaluation</br>
-    - Tamper detection pins (dynamic)</br>
-    - Die and Package Security</br>
-    - Secure back-up SRAM</br>
-    - Secure master key registers</br>
-    - Integrity Check Monitor (SHA256)</br>
-    - On-the-fly External Memory Encryption</br>
-    - RSA/ECC cryptography</br>
-    - AES, 3DES, TRNG, SHA, HW acceleration</br>
-    - Unique ID -64 bit</br>
-    - Customer fuses</br>
-    - Permanent Jtag disable by fuses</br>
-    - Secure RTC with time stamp</br>
-    - Secure Boot & SAM-BA in Secure Mode</br>
-	</br>
+    - TrustZone and CoreTEE
+    - Environmental Monitors (PCI)
+    - PCI Pre-evaluation
+    - Tamper detection pins (dynamic)
+    - Die and Package Security
+    - Secure back-up SRAM
+    - Secure master key registers
+    - Integrity Check Monitor (SHA256)
+    - On-the-fly External Memory Encryption
+    - RSA/ECC cryptography
+    - AES, 3DES, TRNG, SHA, HW acceleration
+    - Unique ID -64 bit
+    - Customer fuses
+    - Permanent Jtag disable by fuses
+    - Secure RTC with time stamp
+    - Secure Boot & SAM-BA in Secure Mode
+	</br></br>
 Check <a href="https://www.microchip.com/mpu" target="_blank">here</a> for more information</br>
 <img src="Doc/sama5d27.png" alt="drawing" width="80"/>
 
 - **Cloud solutions for robust and secure industrial applications: AWS Greengrass**</br>
 AWS Greengrass is a software that extends AWS Cloud capabilities to local devices, making it possible for those devices to collect and analyse data closer to the source of information, while also securely communicating with each other on local networks.</br>
 
-In other way, it brings real time performance to the next level, with no compromise on robustness and security.</br>
-Among the key features from AWS Greengrass making end node robust and secure, let’s underline</br>
-    - lambda runtime that allows you to execute serverless instructions if needed.</br>
-    - A shadow implementation, this means that a Thing has a JSON file (the shadow) where all of its parameters/variables are set and can be modified with lambda functions from the core or from the cloud.</br>
-    - A message manager: when the core needs to restart, the Things can still send messages and the core will save them until the core has restarted again.</br>
-    - A discovery service, it is a service mainly used by the Things to get certificates to connect to a Greengrass Core.</br>
-    - An Over-the-air update agent that allows updating one or more Greengrass Cores on a network at the same time or on predefined schedules. The devices with the Greengrass core will need to have the WiFi activated for this feature to work.</br>
-    - A machine learning inference, meaning that the training is done on the cloud servers but the model (the “brain” of the AI) is on the Greengrass device. Better distribution of the tasks for more efficient and robust process.</br>
+    - In other way, it brings real time performance to the next level, with no compromise on robustness and security. Among the key features from AWS Greengrass making end node robust and secure, let’s underline
+        - lambda runtime that allows you to execute serverless instructions if needed.
+        - A shadow implementation, this means that a Thing has a JSON file (the shadow) where all of its parameters/variables are set and can be modified with lambda functions from the core or from the cloud.
+        - A message manager: when the core needs to restart, the Things can still send messages and the core will save them until the core has restarted again.
+        - A discovery service, it is a service mainly used by the Things to get certificates to connect to a Greengrass Core.
+        - An Over-the-air update agent that allows updating one or more Greengrass Cores on a network at the same time or on predefined schedules. The devices with the Greengrass core will need to have the WiFi activated for this feature to work.
+        - A machine learning inference, meaning that the training is done on the cloud servers but the model (the “brain” of the AI) is on the Greengrass device. Better distribution of the tasks for more efficient and robust process.
 </br>
 <img src="Doc/greengrass_topview.png" alt="drawing" width="570"/> </br>
 <img src="Doc/greengrass_security.png" alt="drawing" width="570"/></br>
-
+</br>
 Check <a href="https://docs.aws.amazon.com/greengrass/latest/developerguide/what-is-gg.html" target="_blank">here</a> for more information</br>
 Check also this nice <a href="http://ww1.microchip.com/downloads/en/Appnotes/Getting-Started-with-AWS-Greengrass-on-SAMA5D2-Application-Note-DS00003170A.pdf" target="_blank">Application note AN3170</a>, helping you getting started with AWS Greengrass on Microchip SAMAD2 MPU</br>
 <img src="Doc/an3170.png" alt="drawing" width="400"/> </br>
@@ -303,8 +294,8 @@ PiArm is a Raspberry Pi based DIY robotic arm outfitted with 6-axis digital comp
         - Python-based code capable of running on any platform like Linux or Windows.</br>
 	    - Connect the shield through a couple of options: through USB or through GPIO.</br>
         - Power to provide a single power source to the Raspberry Pi and the PiArm.</br></br>
-<img src="Doc/piarm.png" alt="drawing" width="280"/>
-<img src="Doc/piarm_dimensions.png" alt="drawing" width="280"/> </br>
+<img src="Doc/piarm.png" alt="drawing" width="270"/>
+<img src="Doc/piarm_dimensions.png" alt="drawing" width="270"/> </br>
 
 - <a href="https://www.amazon.fr/Microsoft-LifeCam-HD-3000-Webcam-720p/dp/B0096M4QOY/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=lifecam+microsoft+5000+HD&qid=1581350549&sr=8-1" target="_blank">1x LifeCam HD 3000 USB Camera from Microsoft</a></br>
 This demo uses this solution from Microsoft but any USB webcam from the market can do the job.</br>
@@ -372,7 +363,7 @@ And validated the demo ...</br>
 <img src="Doc/robot_prototype_05.png" alt="drawing" width="200"/>
 </br>
 
-See the prototype in action:</br>
+See one of the prototype in action:</br>
 
 <a href="https://youtu.be/sZ-LExc-ZR4" target="_blank"><img src="Doc/robot_prototype_video.png" width="240" height="180" border="10" /></a>
 </br>
@@ -402,12 +393,24 @@ Check the video posted on youtube:</br>
 
 Boards connection:</br>
 ![](Doc/hardware_diagram.png)</br>
+USB Hub is used to power some boards but also used to allow data communication between boards.</br>
+Some boards have to be power supplied from independent power sources to avoid USB conflict in the demo due USB mounting enumeration.
 
 ### Software<a name="step3d"></a>
 
 #### Linux Python Application<a name="step3d1"></a>
 
 Checkout the application source code located into Software/Linux_Python_Application_public.zip package
+
+- Application files:
+    - iot_sam.py (main application file)
+    - Eww_robo.py
+    - Eww_robo_misc.py
+    - Piarm.py
+    - Serial_comm.py
+- Robot calibration files:
+    - Eww_robo_calib.json (file which contains the calibration data)
+    - eww_robo_calibration.py (script file)
 
 #### MiWi Mesh Application<a name="step3d2"></a>
 
@@ -425,7 +428,11 @@ The end device transmits periodically the temperature information to the pan coo
 
 #### AWS Web Application<a name="step3d3"></a>
 
-Checkout the dashboard source code located into Software/Dashboard_public.zip package
+Checkout the dashboard source code located into Software/Dashboard_public.zip package.
+</br>
+You need an AWS account and your own certificates. 2 sets of certificate should be provided by AWS (one for the device, one for the web server application).
 
-
+The package contains:
+- HTML Web page (main.html)
+- Python code for the web server (app.py). The application should run in AWS ec2-instance or run in local network. The images captured by the USB camera are sent over MQTT message and stored in S3 bucket cloud.
 
