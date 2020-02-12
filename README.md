@@ -69,7 +69,8 @@ SAMR30M supports IEEE 802.15.4 PHY based protocols, for instance in particular M
     - Sensor 1 acquires the ambient temperature 
     - Sensor 2 acquires the vibration of arm robot, to implement predictive maintenance 
 <img src="Doc/demo_network.png" alt="drawing" width="560"/></br>
-Built for Industry 4.0, this demo is covering 4 use cases:</br>
+</br>
+Built for Industry 4.0, this demo is covering 4 use cases:
 - Use case 1 - Standalone mode (OFF Line) : application data pushed to SmartPhone (Wifi Gateway is set in SoftAP mode) while sensor data gets collected via robust SubGHz Mesh network (see MiWi Mesh based on 802.15.4)
 </br><img src="Doc/architecture_use_case_1.png" alt="drawing" width="560"/></br>
 </br><img src="Doc/architecture_use_case_1_dashboard.png" alt="drawing" width="560"/></br>
