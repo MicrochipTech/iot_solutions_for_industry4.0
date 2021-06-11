@@ -1,4 +1,6 @@
 # iot_solutions_for_industry_4.0
+<img src="Doc/IoT-Made-Easy-Logo.png" width=100>
+
 > “Wireless Made Fun!" - IoT Solutions for Industry 4.0
 
 1. [Facts and challenges of Industry 4.0](#step1)
