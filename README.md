@@ -1,4 +1,4 @@
-# iot_solutions_for_industry_4.0
+# aiot_solutions_for_industry_4.0
 <img src="Doc/IoT-Made-Easy-Logo.png" width=100>
 
 > “Wireless Made Fun!" - IoT Solutions for Industry 4.0
@@ -12,14 +12,14 @@
 		1. [Linux](#step2d1)
 		1. [Security](#step2d2)
 		1. [Wi-Fi](#step2d3)
-		1. [Sub GHz Network](#step2d4)
+		1. [Zigbee Network](#step2d4)
 1. [Do It Yourself](#step3)
 	1. [Bill of materials](#step3a)
 	1. [Step by step guide](#step3b)
 	1. [Hardware](#step3c)
 	1. [Software](#step3d)
 		1. [Linux Python Application](#step3d1)
-		1. [MiWi Mesh Application](#step3d2)
+		1. [Zigbee Mesh Application](#step3d2)
 		1. [AWS Web Application](#step3d3)
 
 ## Facts and challenges of Industry 4.0 <a name="step1"></a>
@@ -34,7 +34,7 @@ But here come 2 challenges for developers building Industry 4.0 products:</br>
 <img src="Doc/industry40.png" alt="drawing" width="480"/>
 </br>
 
-## Our solution : "IoT Solutions for Industry 4.0" <a name="step2"></a>
+## Our solution : "AIoT Solutions for Industry 4.0" <a name="step2"></a>
 
 ![](Doc/demo_00.png)</br>
 
@@ -58,13 +58,13 @@ The automation operations described earlier can only be possible if robot is ful
 - Operate safely to say, support an emergency shut down mode (robot could get stopped in no time)</br>
 - Last but not least, monitor its own environment to prevent future issue: predictive maintenance</br>
 
-To ensure real time operations, with high robustness and security, gateway is based on SAMA5 MPU running a Linux Operating system, with robust Wifi Link Controller (ATWINC1000) fully tested for interoperability and CE/FCC/IC certified
+To ensure real time operations, with high robustness and security, gateway is based on SAMA5 MPU running a Linux Operating system, with robust Wifi Link Controller (ATWILC1000) fully tested for interoperability and CE/FCC/IC certified
 </br></br>
 <img src="Doc/som_wilc_linux.png" alt="drawing" width="200"/>
 </br></br>
-Sensors are connected to the gateway thru a SubGHz network, based on SubGHz SAMR30M Module and its associated development kit <a href="https://www.microchip.com/Developmenttools/ProductDetails/AC164159" target="_blank">(see AC164159 - SAMR30M Xplained Pro Evaluation Kit from Microchip)</a></br>
-SAMR30M supports IEEE 802.15.4 PHY based protocols, for instance in particular Microchip's own MiWi Networking protocols for self-healing Point-to-point, Star and Mesh networking (see <a href="https://www.microchip.com/miwi" target="_blank">Microchip MiWi Home page</a>). This is the network we will use here in this demo.</br>
-- MiWi Network set-up in Mesh
+Sensors are connected to the gateway thru a Zigbee network, based on WBZ451 Module and its associated development kit <a href="https://www.microchip.com/en-us/development-tool/EV96B94A" target="_blank">(see PIC32CX-BZ2 and WBZ451 Curiosity Development Board from Microchip)</a></br>
+WBZ451 supports differnt protocol such as IEEE 802.15.4 PHY based protocols, Microchip's own MiWi Networking protocols for self-healing Point-to-point, Star and Mesh networking, Thread and Zigbee (see <a href="https://www.microchip.com/en-us/products/wireless-connectivity/zigbee" target="_blank">Microchip Zigbee Home page</a>). This is the network we will use here in this demo.</br>
+- Zigbee Network with Custom Cluster
 - “PAN Coordinator” connected to “ATSAMA5D27-SOM1-EK1” Development Kit
 - 2 sensors used for data harvesting 
     - Sensors set-up as “End Device”
@@ -73,14 +73,14 @@ SAMR30M supports IEEE 802.15.4 PHY based protocols, for instance in particular M
 <img src="Doc/demo_network.png" alt="drawing" width="560"/></br>
 </br>
 Built for Industry 4.0, this demo is covering 4 use cases:</br>
-- Use case 1 - Standalone mode (OFF Line) : application data pushed to SmartPhone (Wifi Gateway is set in SoftAP mode) while sensor data gets collected via robust SubGHz Mesh network (see MiWi Mesh based on 802.15.4)
+- Use case 1 - Standalone mode (OFF Line) : application data pushed to SmartPhone (Wifi Gateway is set in SoftAP mode) while sensor data gets collected via robust Zigbee® Mesh network (see Zigbee® MCU Products)
 </br><img src="Doc/architecture_use_case_1.png" alt="drawing" width="560"/></br>
 </br><img src="Doc/architecture_use_case_1_dashboard.png" alt="drawing" width="560"/></br>
-- Use case 2 - ON Line mode with AWS IoT : application data is pushed to the Cloud using AWS IoT (Wifi Gateway is set in Station mode). No change for sensor network compared to use case 1 : data gets collected via robust SubGHz Mesh network (see MiWi Mesh based on 802.15.4)
+- Use case 2 - ON Line mode with AWS IoT : application data is pushed to the Cloud using AWS IoT (Wifi Gateway is set in Station mode). No change for sensor network compared to use case 1 : data gets collected via robust Zigbee® Mesh network (see Zigbee® MCU Products)
 </br><img src="Doc/architecture_use_case_2.png" alt="drawing" width="560"/></br>
-- Use case 3 - Concurrent mode (Wifi as SoftAP and Station mode): Wifi Gateway supports and operates simultaneously Station and SoftAP modes, aggregating Use cases 1 and 2. No change for sensor network compared to use cases 1 and 2 : data gets collected via robust SubGHz Mesh network (see MiWi Mesh based on 802.15.4)
+- Use case 3 - Concurrent mode (Wifi as SoftAP and Station mode): Wifi Gateway supports and operates simultaneously Station and SoftAP modes, aggregating Use cases 1 and 2. No change for sensor network compared to use cases 1 and 2 : data gets collected via robust Zigbee® Mesh network (see Zigbee® MCU Products)
 </br><img src="Doc/architecture_use_case_3.png" alt="drawing" width="560"/></br>
-- Use case 4 - ON Line mode with AWS Greengrass: robust connectivity taking full leverage of AWS Greengrass. Here, demonstrator is connected to the Cloud through Ethernet wired connectivity. Sensors now communicate to the Gateway thru Wifi
+- Use case 4 - ON Line mode with AWS Greengrass: robust connectivity taking full leverage of AWS Greengrass. Here, demonstrator is connected to the Cloud through Ethernet wired connectivity. Sensors now communicate to the Gateway thru Wi-Fi®
 </br><img src="Doc/architecture_use_case_4.png" alt="drawing" width="560"/></br>
 
 ### First and foremost, made secure and robust<a name="step2b"></a>
@@ -251,25 +251,12 @@ For the purpose of this demo, linux4wilc Github repo has been used for getting t
 <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en607651" target="_blank">ATWILC3000-SD Evaluation Kit Design Files</a></br>
 <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en606209" target="_blank">ATSAMA5D27 SOM1 Kit1 User Guide</a></br>
 
-#### Sub GHz Network<a name="step2d4"></a>
+#### Zigbee Network<a name="step2d4"></a>
 
-<a href="https://www.microchip.com/wwwproducts/en/ATSAMR30M18" target="_blank">SAMR30M module landing page</a></br> 
+<a href="https://www.microchip.com/wwwproducts/en/ATSAMR30M18" target="_blank">WBZ451PE module landing page</a></br> 
 
-<img src="Doc/samr30m.png" alt="drawing" width="570"/> </br>
+<img src="Doc/WBZ451PE.png" alt="drawing" width="570"/> </br>
 
-<a href="https://www.microchip.com/miwi" target="_blank">MiWi landing page</a></br> 
-MiWi™ Protocol has been developed by Microchip to enable low-cost, commercial and smart home networks.
-The MiWi™ protocol is used in applications such HVAC systems and alarm sensors where reliable self-healing mesh networking is needed. The MiWi protocol supports operation in the IEEE 802.15.4 radio PHY in the sub-GHz and 2.4 GHz ISM bands.</br>
-The MiWi protocol stack offers a significantly smaller footprint relative to the open standard-based Zigbee® compliant protocol stack. This enables operation in microcontrollers with smaller memory/lower cost. A typical end node requires only 20 KB of code space.</br>
-
-* <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en609774" target="_blank">MiWi Quick Start Guide</a></br>
-* <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en609705" target="_blank">MiWi Software Design Guide</a></br>
-* <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en609798" target="_blank">MiWi Version Migration Guide</a></br>
-
-<img src="Doc/miwi_topology.png" alt="drawing" width="320"/> </br>
-
-And visit Microchip Github for a complete MiWi Mesh demo to monitor temperatures:
-<a href="https://github.com/MicrochipTech/Wireless-Sensor-Network-2019" target="_blank">Wireless Sensor Network demo</a></br>
 
 ## Do It Yourself<a name="step3"></a>
 
@@ -318,9 +305,9 @@ This development kit will enable one or several of these functions, depending on
 The ATWILC1000-SD evaluation kit is a hardware platform to evaluate the ATWILC1000-MR110PB module. The ATWILC1000-SD is based on the SmartConnect WILC1000, an IEEE 802.11 b/g/n IoT link controller module. It is the ideal add-On to existing MCU solutions bringing WiFi through UART or SPI/SDIO-to-WiFi interface.</br>
 <img src="Doc/atwilc1000-sd.png" alt="drawing" width="320"/></br>
 
-- <a href="https://www.microchip.com/Developmenttools/ProductDetails/AC164159" target="_blank">3x SAMR30M Xplained Pro (AC164159)</a></br>
-The SAM R30M Xplained Pro is a hardware platform designed to evaluate the SAMR30M18A module. Used here for our sensors network, monitoring key variables of our application (presence, temperature, vibration…). </br>
-In this demo, we will program these boards with true routing Mesh firmware from Microchip (see <a href="https://www.microchip.com/miwi" target="_blank">MiWi landing page</a>) and use on-board <a href="https://www.microchip.com/wwwproducts/en/AT30TSE758A" target="_blank">AT30TSE758A Digital Temperature Sensor</a>. This board could also be used to connect additional sensors such as accelerometers, and in such enables new use cases such as predictive maintenance.</br>
+- <a href="https://www.microchip.com/en-us/development-tool/EV96B94A" target="_blank">3x PIC32CX-BZ2 and WBZ451 Curiosity Development Board (AC164159)</a></br>
+The PIC32CX-BZ2 and WBZ451 Curiosity Development Board, based on the WBZ451PE module. It comes preconfigured with an out-of-the-box multi-protocol demo application and features a temperature sensor, a current measurement header, an RGB LED and a MikroElectronika mikroBUSTM socket to attach a plethora of sensors and add-on boards.  Used here for our sensors network, monitoring key variables of our application (presence, temperature, vibration…). </br>
+In this demo, we will program these boards with true zigbee firmware from Microchip (see <a href="https://www.microchip.com/en-us/products/wireless-connectivity/zigbee" target="_blank">Zigbee landing page</a>) and use on-board <a href="https://www.microchip.com/wwwproducts/en/AT30TSE758A" target="_blank">AT30TSE758A Digital Temperature Sensor</a>. This board could also be used to connect additional sensors such as accelerometers, and in such enables new use cases such as predictive maintenance.</br>
 <img src="Doc/samr30mxpro.png" alt="drawing" width="480"/></br>
 
 - <a href="https://www.amazon.fr/dp/B079QY57LN/ref=dp_prsubs_1" target="_blank">1x Emergency Button</a></br>
