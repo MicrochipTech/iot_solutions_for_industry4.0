@@ -36,7 +36,7 @@ But here come 2 challenges for developers building Industry 4.0 products:</br>
 
 ## Our solution : "AIoT Solutions for Industry 4.0" <a name="step2"></a>
 
-![](Doc/demo_00.png)</br>
+![](Doc/aiot_1.jpg)</br>
 
 To help you go through these challenges, Microchip Technology has built this demonstrator, integrating our state-of-the-art solutions with a focus on robustness and security. This application manages a sensor network while controlling a robot, and report data thru an HMI. Several use cases are provided (Station, SoftAP or concurrent modes - Ethernet, Wifi and SubGHz connectivity – Standalone, AWS IoT or AWS Greengrass…) to best adapt our solutions to your need.</br>
 Check it out here:</br>
@@ -47,7 +47,7 @@ And enjoy this Github session
 
 ### System architecture <a name="step2a"></a>
 
-Main unit (see “ATSAMA5D27-SOM1-EK1” Development Kit) has the following functionalities</br>
+Main unit (see “SAM9X75 Curiosity” Development Kit) has the following functionalities</br>
 - First and foremost, it drives the robot operations. This will be here your typical factory automation operations: moving, cutting, bending, pressing or connecting pieces altogether</br>
 - Collecting and processing sensors data</br>
 The automation operations described earlier can only be possible if robot is fully aware of its environment. So, the need of collecting data related to the assembly line environment (input), the operation performed (the output or result of a given operation) but also the robot status </br>
@@ -58,14 +58,14 @@ The automation operations described earlier can only be possible if robot is ful
 - Operate safely to say, support an emergency shut down mode (robot could get stopped in no time)</br>
 - Last but not least, monitor its own environment to prevent future issue: predictive maintenance</br>
 
-To ensure real time operations, with high robustness and security, gateway is based on SAMA5 MPU running a Linux Operating system, with robust Wifi Link Controller (ATWILC1000) fully tested for interoperability and CE/FCC/IC certified
+To ensure real time operations, with high robustness and security, gateway is based on SAM9X75 MPU running a Linux Operating system, with robust Wifi Link Controller (ATWILC1000) fully tested for interoperability and CE/FCC/IC certified
 </br></br>
 <img src="Doc/som_wilc_linux.png" alt="drawing" width="200"/>
 </br></br>
 Sensors are connected to the gateway thru a Zigbee network, based on WBZ451 Module and its associated development kit <a href="https://www.microchip.com/en-us/development-tool/EV96B94A" target="_blank">(see PIC32CX-BZ2 and WBZ451 Curiosity Development Board from Microchip)</a></br>
 WBZ451 supports differnt protocol such as IEEE 802.15.4 PHY based protocols, Microchip's own MiWi Networking protocols for self-healing Point-to-point, Star and Mesh networking, Thread and Zigbee (see <a href="https://www.microchip.com/en-us/products/wireless-connectivity/zigbee" target="_blank">Microchip Zigbee Home page</a>). This is the network we will use here in this demo.</br>
 - Zigbee Network with Custom Cluster
-- “PAN Coordinator” connected to “ATSAMA5D27-SOM1-EK1” Development Kit
+- “PAN Coordinator” connected to “SAM9X75 Curiosity” Development Kit
 - 2 sensors used for data harvesting 
     - Sensors set-up as “End Device”
     - Sensor 1 acquires the ambient temperature 
@@ -144,16 +144,12 @@ So there is no excuse to bring security to your device.
 
 <img src="Doc/trustplatform.png" alt="drawing" width="720"/></br>
 
-SAMA5D27-WLSOM1 : <a href="https://microchipdeveloper.com/authentication:trust-platform" target="_blank">Linux drivers with Complete Stack solution available</a></br>
+SAM9X75 : <a href="https://microchipdeveloper.com/authentication:trust-platform" target="_blank">Linux drivers with Complete Stack solution available</a></br>
 <img src="Doc/wireless_som_ecc.png" alt="drawing" width="400"/>
 </br>
 
 - **Because a Secure MPU matters too!**</br>
-Comprehensive security feature is embedded inside the ATSAMA5D27 including:</br>
-    - TrustZone and CoreTEE
-    - Environmental Monitors (PCI)
-    - PCI Pre-evaluation
-    - Tamper detection pins (dynamic)
+Comprehensive security feature is embedded inside the SAM9X75 including:</br>
     - Die and Package Security
     - Secure back-up SRAM
     - Secure master key registers
@@ -166,6 +162,7 @@ Comprehensive security feature is embedded inside the ATSAMA5D27 including:</br>
     - Permanent Jtag disable by fuses
     - Secure RTC with time stamp
     - Secure Boot & SAM-BA in Secure Mode
+	</br></br>
 	</br></br>
 Check <a href="https://www.microchip.com/mpu" target="_blank">here</a> for more information</br>
 <img src="Doc/sama5d27.png" alt="drawing" width="80"/>
@@ -200,8 +197,8 @@ We have partnerships with the largest cloud computing companies.</br>
 ### Technology bricks<a name="step2d"></a>
 
 Total System Solution from Microchip:</br>
-- Smart   : PIC32 MCU, SAMA5 MPU</br>
-- Connect : WINC/WILC Wi-Fi controllers, SAM R30 SubGHz MCU</br>
+- Smart   : PIC32 MCU, SAM9X75 MPU</br>
+- Connect : WINC/WILC Wi-Fi controllers, WBZ451 MCU</br>
 - Secure  : ATECC608A Secure Element</br>
 Comprehensive firmware ecosystem, from Sensor to Cloud (AWS IoT Core, Microsoft Azure, Google GCP)</br>
 
