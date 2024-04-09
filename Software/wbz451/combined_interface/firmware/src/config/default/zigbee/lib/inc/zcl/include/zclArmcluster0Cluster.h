@@ -1,0 +1,288 @@
+/*******************************************************************************
+  ZCL ZCC CUSTOM Cluster Header File
+
+  Company:
+    Microchip Technology Inc.
+
+  File Name:
+    zclArmcluster0Cluster.h
+
+  Summary:
+    The header file describes the ZCL CUSTOM Cluster and its interface.
+
+  Description:
+    The file describes the types and interface of the ZCL CUSTOM Cluster.
+ *******************************************************************************/
+
+// DOM-IGNORE-BEGIN
+/*******************************************************************************
+* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+*
+* Subject to your compliance with these terms, you may use Microchip software
+* and any derivatives exclusively with Microchip products. It is your
+* responsibility to comply with third party license terms applicable to your
+* use of third party software (including open source software) that may
+* accompany Microchip software.
+*
+* THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS". NO WARRANTIES, WHETHER
+* EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIED
+* WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A
+* PARTICULAR PURPOSE.
+*
+* IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE,
+* INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND
+* WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS
+* BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. TO THE
+* FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
+* ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
+* THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+*******************************************************************************/
+// DOM-IGNORE-END
+
+#ifndef _ZCLARMCLUSTER0_H
+#define _ZCLARMCLUSTER0_H
+
+/*******************************************************************************
+                   Includes section
+*******************************************************************************/
+
+#include <zcl/include/zcl.h>
+#include <zcl/include/clusters.h>
+/******************************************************************************
+                    Define(s) section
+******************************************************************************/
+    
+//ATTRIBUTE DEFINITION SECTION
+
+
+#define ARMCLUSTER0_CLUSTER_ID                                                     0xfc00
+
+#define ZCL_ARMCLUSTER0_SERVER_ATTRIBUTES_AMOUNT                      2
+#define ZCL_ARMCLUSTER0_SERVER_COMMANDS_AMOUNT                        2 
+
+#define ZCL_ARMCLUSTER0_CLIENT_ATTRIBUTES_AMOUNT                      2
+#define ZCL_ARMCLUSTER0_CLIENT_COMMANDS_AMOUNT                        2
+
+//Attribute IDs
+#define ZCL_ARMCLUSTER0_ARMORIENTATIONCLIENTATTRIBUTE_SERVER_ATTRIBUTE_ID        CCPU_TO_LE16(0X0)
+#define ZCL_ARMCLUSTER0_ARMMOVEMENTCLIENTATTRIBUTE_SERVER_ATTRIBUTE_ID           CCPU_TO_LE16(0X1)
+
+#define ZCL_ARMCLUSTER0_ARMORIENTATIONCLIENTATTRIBUTE_CLIENT_ATTRIBUTE_ID        CCPU_TO_LE16(0X0)
+#define ZCL_ARMCLUSTER0_ARMMOVEMENTCLIENTATTRIBUTE_CLIENT_ATTRIBUTE_ID           CCPU_TO_LE16(0X1)
+
+#define ZCL_DEFINE_ARMCLUSTER0_CLUSTER_SERVER_ATTRIBUTES() \
+        DEFINE_ATTRIBUTE(Armorientationclientattribute, ZCL_READONLY_ATTRIBUTE, ZCL_ARMCLUSTER0_ARMORIENTATIONCLIENTATTRIBUTE_SERVER_ATTRIBUTE_ID, ZCL_8BIT_ENUM_DATA_TYPE_ID) , \
+        DEFINE_ATTRIBUTE(Armmovementclientattribute, ZCL_READONLY_ATTRIBUTE, ZCL_ARMCLUSTER0_ARMMOVEMENTCLIENTATTRIBUTE_SERVER_ATTRIBUTE_ID, ZCL_8BIT_ENUM_DATA_TYPE_ID) 
+
+#define ZCL_DEFINE_ARMCLUSTER0_CLUSTER_CLIENT_ATTRIBUTES(min,max) \
+        DEFINE_REPORTABLE_ATTRIBUTE(Armorientationclientattribute, ZCL_READONLY_ATTRIBUTE, ZCL_ARMCLUSTER0_ARMORIENTATIONCLIENTATTRIBUTE_CLIENT_ATTRIBUTE_ID, ZCL_8BIT_ENUM_DATA_TYPE_ID, min, max) , \
+        DEFINE_REPORTABLE_ATTRIBUTE(Armmovementclientattribute, ZCL_READONLY_ATTRIBUTE, ZCL_ARMCLUSTER0_ARMMOVEMENTCLIENTATTRIBUTE_CLIENT_ATTRIBUTE_ID, ZCL_8BIT_ENUM_DATA_TYPE_ID, min, max) 
+
+
+
+#define ARMCLUSTER0_CLUSTER_ZCL_SERVER_CLUSTER_TYPE(clattributes, clcommands)                                                \
+  {                                                                                                              \
+    .id = ARMCLUSTER0_CLUSTER_ID,                                                                                      \
+    .options = {.type = ZCL_SERVER_CLUSTER_TYPE, .security = ZCL_NETWORK_KEY_CLUSTER_SECURITY},                  \
+    .attributesAmount = ZCL_ARMCLUSTER0_SERVER_ATTRIBUTES_AMOUNT,                                              \
+    .attributes = (uint8_t *) clattributes,                                                                      \
+    .commandsAmount = ZCL_ARMCLUSTER0_SERVER_COMMANDS_AMOUNT,                                                  \
+    .commands = (uint8_t *)clcommands                                                                            \
+  }
+
+#define ARMCLUSTER0_CLUSTER_ZCL_CLIENT_CLUSTER_TYPE(clattributes, clcommands)                                                \
+  {                                                                                                              \
+    .id = ARMCLUSTER0_CLUSTER_ID,                                                                                      \
+    .options = {.type = ZCL_CLIENT_CLUSTER_TYPE, .security = ZCL_NETWORK_KEY_CLUSTER_SECURITY},                  \
+    .attributesAmount = ZCL_ARMCLUSTER0_CLIENT_ATTRIBUTES_AMOUNT,                                              \
+    .attributes = (uint8_t *) clattributes,                                                                      \
+    .commandsAmount = ZCL_ARMCLUSTER0_CLIENT_COMMANDS_AMOUNT,                                                  \
+    .commands = (uint8_t *)clcommands                                                                            \
+  }
+
+
+  #define DEFINE_ARMCLUSTER0_CLUSTER(cltype, clattributes, clcommands) \
+    ARMCLUSTER0_CLUSTER_##cltype(clattributes, clcommands)
+
+
+// ATTRIBUTE DEFINITION END
+//COMMAND DEFINITION SECTION
+
+//Server Commands
+#define ZCL_ARMCLUSTER0_ARMORIENTATIONSERVERCOMMAND_COMMAND_ID                   0x0
+#define ZCL_ARMCLUSTER0_ARMMOVEMENTSERVERCOMMAND_COMMAND_ID                      0x1
+
+//Client Commands
+#define ZCL_ARMCLUSTER0_ARMORIENTATIONCLIENTCOMMAND_COMMAND_ID                   0x0
+#define ZCL_ARMCLUSTER0_ARMMOVEMENTCLIENTCOMMAND_COMMAND_ID                      0x1
+
+#define ZCL_DEFINE_ARMCLUSTER0_CLUSTER_COMMANDS(\
+        ArmorientationservercommandCommandInd , \
+        ArmmovementservercommandCommandInd , \
+        ArmorientationclientcommandCommandInd , \
+        ArmmovementclientcommandCommandInd ) \
+    DEFINE_COMMAND(ArmorientationservercommandCommand, ZCL_ARMCLUSTER0_ARMORIENTATIONSERVERCOMMAND_COMMAND_ID,  \
+        COMMAND_OPTIONS(SERVER_TO_CLIENT , ZCL_THERE_IS_RELEVANT_RESPONSE , ZCL_COMMAND_NO_ACK), ArmorientationservercommandCommandInd), \
+    DEFINE_COMMAND(ArmmovementservercommandCommand, ZCL_ARMCLUSTER0_ARMMOVEMENTSERVERCOMMAND_COMMAND_ID,  \
+        COMMAND_OPTIONS(SERVER_TO_CLIENT , ZCL_THERE_IS_RELEVANT_RESPONSE , ZCL_COMMAND_NO_ACK), ArmmovementservercommandCommandInd), \
+    DEFINE_COMMAND(ArmorientationclientcommandCommand, ZCL_ARMCLUSTER0_ARMORIENTATIONCLIENTCOMMAND_COMMAND_ID,  \
+        COMMAND_OPTIONS(CLIENT_TO_SERVER , ZCL_THERE_IS_RELEVANT_RESPONSE , ZCL_COMMAND_NO_ACK), ArmorientationclientcommandCommandInd), \
+    DEFINE_COMMAND(ArmmovementclientcommandCommand, ZCL_ARMCLUSTER0_ARMMOVEMENTCLIENTCOMMAND_COMMAND_ID,  \
+        COMMAND_OPTIONS(CLIENT_TO_SERVER , ZCL_THERE_IS_RELEVANT_RESPONSE , ZCL_COMMAND_NO_ACK), ArmmovementclientcommandCommandInd)
+    
+
+
+/******************************************************************************
+                    Types section
+******************************************************************************/
+//ATTRIBUTE's TYPES SECTION
+typedef enum _ZCL_Armcluster0ArmorientationclientattributeEnum_t
+{
+    ARMCLUSTER0_ARMORIENTATIONCLIENTATTRIBUTE_0 = 0x00
+}ZCL_Armcluster0ArmorientationclientattributeEnum_t;
+
+typedef enum _ZCL_Armcluster0ArmmovementclientattributeEnum_t
+{
+    ARMCLUSTER0_ARMMOVEMENTCLIENTATTRIBUTE_1 = 0x00
+}ZCL_Armcluster0ArmmovementclientattributeEnum_t;
+
+
+
+
+typedef struct PACK
+{
+struct PACK
+  {
+    ZCL_AttributeId_t   id;
+    uint8_t             type;
+    uint8_t             properties;
+    uint8_t             value;
+   } Armorientationclientattribute;
+
+struct PACK
+  {
+    ZCL_AttributeId_t   id;
+    uint8_t             type;
+    uint8_t             properties;
+    uint8_t             value;
+   } Armmovementclientattribute;
+
+}ZCL_Armcluster0ClusterServerAttributes_t;
+
+typedef struct PACK
+{
+struct PACK
+  {
+    ZCL_AttributeId_t   id;
+    uint8_t             type;
+    uint8_t             properties;
+    uint8_t             value;
+    ZCL_ReportTime_t    reportCounter;     //!<For internal use only
+    ZCL_ReportTime_t    minReportInterval; //!<Minimum reporting interval field value
+    ZCL_ReportTime_t    maxReportInterval; //!<Maximum reporting interval field value
+    uint8_t             reportableChange;  //!<Reporting change field value
+    ZCL_ReportTime_t    timeoutPeriod;     //!<Timeout period field value
+    uint8_t             lastReportedValue; //!<Last reported value
+   } Armorientationclientattribute;
+
+struct PACK
+  {
+    ZCL_AttributeId_t   id;
+    uint8_t             type;
+    uint8_t             properties;
+    uint8_t             value;
+    ZCL_ReportTime_t    reportCounter;     //!<For internal use only
+    ZCL_ReportTime_t    minReportInterval; //!<Minimum reporting interval field value
+    ZCL_ReportTime_t    maxReportInterval; //!<Maximum reporting interval field value
+    uint8_t             reportableChange;  //!<Reporting change field value
+    ZCL_ReportTime_t    timeoutPeriod;     //!<Timeout period field value
+    uint8_t             lastReportedValue; //!<Last reported value
+   } Armmovementclientattribute;
+
+}ZCL_Armcluster0ClusterClientAttributes_t;
+
+
+// COMMANDS TYPE DEFINITION
+typedef struct 
+{
+    //Fill enum here
+} ZCL_ZCC0_CUSTOM_CLUSTER_SERVER_COMMANDS_NAME_0ArmorientationserverparamCommandEnum_t;
+
+typedef struct 
+{
+    //Fill enum here
+} ZCL_ZCC0_CUSTOM_CLUSTER_SERVER_COMMANDS_NAME_1ArmmovementserverparamCommandEnum_t;
+
+
+typedef struct 
+{
+    //Fill enum here
+} ZCL_ArmorientationservercommandArmorientationserverparamCommandEnum_t;
+
+typedef struct 
+{
+    //Fill enum here
+} ZCL_ArmmovementservercommandArmmovementserverparamCommandEnum_t;
+
+
+typedef struct PACK
+{
+        uint8_t Armorientationserverparam;
+
+}ZCL_Armorientationservercommand_t;
+
+typedef struct PACK
+{
+        uint8_t Armmovementserverparam;
+
+}ZCL_Armmovementservercommand_t;
+
+
+typedef struct PACK
+{
+        uint8_t Armorientationparam;
+
+}ZCL_Armorientationclientcommand_t;
+
+typedef struct PACK
+{
+        uint8_t Armmovementparam;
+
+}ZCL_Armmovementclientcommand_t;
+
+
+typedef struct
+{
+struct
+  {
+    ZCL_CommandId_t id;
+    ZclCommandOptions_t options;
+    ZCL_Status_t(*ArmorientationservercommandCommand)(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Armorientationservercommand_t *payload);
+  } ArmorientationservercommandCommand;
+
+struct
+  {
+    ZCL_CommandId_t id;
+    ZclCommandOptions_t options;
+    ZCL_Status_t(*ArmmovementservercommandCommand)(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Armmovementservercommand_t *payload);
+  } ArmmovementservercommandCommand;
+
+
+struct
+  {
+    ZCL_CommandId_t id;
+    ZclCommandOptions_t options;
+    ZCL_Status_t(*ArmorientationclientcommandCommand)(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Armorientationclientcommand_t *payload);
+  } ArmorientationclientcommandCommand;
+
+struct
+  {
+    ZCL_CommandId_t id;
+    ZclCommandOptions_t options;
+    ZCL_Status_t(*ArmmovementclientcommandCommand)(ZCL_Addressing_t *addressing, uint8_t payloadLength, ZCL_Armmovementclientcommand_t *payload);
+  } ArmmovementclientcommandCommand;
+
+
+} ZCL_Armcluster0ClusterCommands_t;
+
+#endif

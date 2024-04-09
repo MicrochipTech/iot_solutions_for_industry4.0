@@ -1,0 +1,1482 @@
+<!doctype html>
+    <head>
+    <meta charset="utf-8" />
+    <title>EW-2020</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+    
+	.wrapper {
+      position: relative;
+	  width: 998px;
+	  height: 950px;
+	  margin: 0px auto 0 auto;
+      border: 3px solid red;
+      clear: both;
+    }
+	
+	.box {
+		margin:auto;
+		text-align: center;
+		border:1px solid black;    
+		width:137px;
+		height:120px;	
+    }
+	
+	.box-wrapper {
+		float:left;
+		width:137px;
+		height:120px;
+	}
+	
+	
+	.box1 {
+		float:left;
+		border:1px solid black;    
+		width:500px;
+		height:500px;	
+    }
+	
+	.box-wrapper1 {
+		float:left;
+		width:500px;
+		height:500px;
+	}
+	
+
+    .box2 {
+		margin:auto;
+		text-align: center;
+		float:left;
+		border:1px solid black;
+		width:174px;
+		height:772px;
+    }
+	
+	.box3 {
+		margin:auto;
+		text-align: center;
+		float:left;
+        width:990px;
+		height:40px;
+    }
+	
+	.box4 {
+	
+		float:left;
+		width:320px;
+		height:320px;
+	
+	}
+	
+	.box5 {
+		margin:auto;
+		float:left;
+		border:1px solid black;    
+		width:80px;
+		height:80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;		
+    }
+	
+	.box-wrapper5 {
+		float:left;
+		width:80px;
+		height:80px;
+	
+	}	
+	
+	.box6 {
+		margin:auto;
+		float:left;
+		border:1px solid black;    
+		width:320px;
+		height:30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;		
+    }
+	
+	.box-wrapper6 {
+		float:left;
+		width:320px;
+		height:30px;
+	
+	}
+	
+	.box7 {
+		margin:auto;
+		float:left;
+		border:1px solid black;    
+		width:320px;
+		height:150px;
+		display: flex;
+    }
+	
+	.box-wrapper7 {
+		float:left;
+		width:320px;
+		height:150px;
+	
+	}
+	
+		.box9 {
+		float:left;
+		width:822px;
+		height:272px;
+	
+	}
+	
+		.box10 {
+		float:left;
+		width:822px;
+		height:780px;
+	
+	}
+	
+	.box11 {
+		margin:auto;
+		float:left;
+		border:1px solid black;    
+		width:822px;
+		height:30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	
+	.button0 {
+		display: inline-block;
+		padding: 1px 7px;
+		font-size: 25px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: #FF0000;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #999;
+	}
+
+	.button0:hover {background-color: #444444}
+
+	.button0:active {
+		background-color: #3e8e41;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	}
+	
+	.button1 {
+		display: inline-block;
+		padding: 1px 7px;
+		font-size: 25px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: #FF0000;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #999;
+	}
+
+	.button1:hover {background-color: #444444}
+
+	.button1:active {
+		background-color: #3e8e41;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	}
+	
+	.button2 {
+		display: inline-block;
+		padding: 1px 7px;
+		font-size: 25px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: #FF0000;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #999;
+	}
+
+	.button2:hover {background-color: #444444}
+
+	.button2:active {
+		background-color: #3e8e41;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	}
+	
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+	/* Base Industrial Class */
+	.industrial {
+		background: rgb(240,240,240);
+		overflow: hidden;
+	}
+
+	/* Space div that counters the meter */
+	.industrial > .space {
+		width: 100%;
+		height: 80%;
+		-webkit-transition: 2s height;
+		-moz-transition: 2s height;
+		-o-transition: 2s height;
+		-ms-transition: 2s height;
+		transition: 2s height;
+	}
+
+	.industrial > .meter {
+		height: 100%;
+		width: 100%;
+		background: -webkit-linear-gradient(left, rgba(95, 100, 221, 0.75), rgba(76, 69, 233,.75));
+		background: -moz-linear-gradient(left, rgba(95, 100, 221, 0.75), rgba(76, 69, 233,.75));
+		background: -o-linear-gradient(left, rgba(95, 100, 221, 0.75), rgba(76, 69, 233,.75));
+		background: -ms-linear-gradient(left, rgba(95, 100, 221, 0.75), rgba(76, 69, 233,.75));
+		background: linear-gradient(left, rgba(95, 100, 221, 0.75), rgba(76, 69, 233,.75));
+	}
+
+	/* Industrial LED */
+	.industrial.led {
+		width: 25px;
+		height: 25px;
+		border-radius: 10em;
+		overflow: visible;
+	}
+
+	.industrial.led > .meter {
+		border-radius: 10em;
+	}
+
+	/* Extra colour overrides */
+	.danger {
+		background: -webkit-linear-gradient(left, rgba(253, 38, 73, 0.75), rgba(216, 29, 29, .75)) !important;
+		background: -moz-linear-gradient(left, rgba(253, 38, 73, 0.75), rgba(216, 29, 29, .75)) !important;
+		background: -o-linear-gradient(left, rgba(253, 38, 73, 0.75), rgba(216, 29, 29, .75)) !important;
+		background: -ms-linear-gradient(left, rgba(253, 38, 73, 0.75), rgba(216, 29, 29, .75)) !important;
+		background: linear-gradient(left, rgba(253, 38, 73, 0.75), rgba(216, 29, 29, .75)) !important;
+	}
+
+	.primary {
+		background: -webkit-linear-gradient(left, rgba(95, 100, 221, 0.75), rgba(76, 69, 233,.75)) !important;
+		background: -moz-linear-gradient(left, rgba(95, 100, 221, 0.75), rgba(76, 69, 233,.75)) !important;
+		background: -o-linear-gradient(left, rgba(95, 100, 221, 0.75), rgba(76, 69, 233,.75)) !important;
+		background: -ms-linear-gradient(left, rgba(95, 100, 221, 0.75), rgba(76, 69, 233,.75)) !important;
+		background: linear-gradient(left, rgba(95, 100, 221, 0.75), rgba(76, 69, 233,.75)) !important;
+	}
+
+	.warning {
+		background: -webkit-linear-gradient(left, rgba(255, 244, 0, 0.75), rgba(245, 216, 6, .75)) !important;
+		background: -moz-linear-gradient(left, rgba(255, 244, 0, 0.75), rgba(245, 216, 6, .75)) !important;
+		background: -o-linear-gradient(left, rgba(255, 244, 0, 0.75), rgba(245, 216, 6, .75)) !important;
+		background: -ms-linear-gradient(left, rgba(255, 244, 0, 0.75), rgba(245, 216, 6, .75)) !important;
+		background: linear-gradient(left, rgba(255, 244, 0, 0.75), rgba(245, 216, 6, .75)) !important;
+	}
+
+	.safe {
+		background: -webkit-linear-gradient(left, rgba(9, 214, 0, 0.75), rgba(6, 160, 0, .75)) !important;
+		background: -moz-linear-gradient(left, rgba(9, 214, 0, 0.75), rgba(6, 160, 0, .75)) !important;
+		background: -o-linear-gradient(left, rgba(9, 214, 0, 0.75), rgba(6, 160, 0, .75)) !important;
+		background: -ms-linear-gradient(left, rgba(9, 214, 0, 0.75), rgba(6, 160, 0, .75)) !important;
+		background: linear-gradient(left, rgba(9, 214, 0, 0.75), rgba(6, 160, 0, .75)) !important;
+	}
+
+	.unimportant {
+		background: -webkit-linear-gradient(left, rgba(122, 122, 122, 0.75), rgba(85, 85, 85, .75)) !important;
+		background: -moz-linear-gradient(left, rgba(122, 122, 122, 0.75), rgba(85, 85, 85, .75)) !important;
+		background: -o-linear-gradient(left, rgba(122, 122, 122, 0.75), rgba(85, 85, 85, .75)) !important;
+		background: -ms-linear-gradient(left, rgba(122, 122, 122, 0.75), rgba(85, 85, 85, .75)) !important;
+		background: linear-gradient(left, rgba(122, 122, 122, 0.75), rgba(85, 85, 85, .75)) !important;
+	}
+
+
+	/* LED-specific colour overrides */
+	.industrial.led .meter.green {
+		background: -webkit-linear-gradient(left, rgba(9, 214, 0, 0.75), rgba(6, 160, 0, .75)) !important;
+		background: -moz-linear-gradient(left, rgba(9, 214, 0, 0.75), rgba(6, 160, 0, .75)) !important;
+		background: -o-linear-gradient(left, rgba(9, 214, 0, 0.75), rgba(6, 160, 0, .75)) !important;
+		background: -ms-linear-gradient(left, rgba(9, 214, 0, 0.75), rgba(6, 160, 0, .75)) !important;
+		background: linear-gradient(left, rgba(9, 214, 0, 0.75), rgba(6, 160, 0, .75)) !important;
+		box-shadow: 0 0 1em .05em rgb(10, 255, 0), 0 0 .1em rgb(0, 0, 0) inset;
+	}
+	.industrial.led .meter.green.on {
+		/* Alias for .green */
+	}
+
+	.industrial.led .meter.red {
+		background: -webkit-linear-gradient(left, rgba(253, 38, 73, 0.75), rgba(216, 29, 29, .75)) !important;
+		background: -moz-linear-gradient(left, rgba(253, 38, 73, 0.75), rgba(216, 29, 29, .75)) !important;
+		background: -o-linear-gradient(left, rgba(253, 38, 73, 0.75), rgba(216, 29, 29, .75)) !important;
+		background: -ms-linear-gradient(left, rgba(253, 38, 73, 0.75), rgba(216, 29, 29, .75)) !important;
+		background: linear-gradient(left, rgba(253, 38, 73, 0.75), rgba(216, 29, 29, .75)) !important;
+		box-shadow: 0 0 1em .05em rgb(255, 0, 0), 0 0 .1em rgb(0, 0, 0) inset;
+	}
+	.industrial.led .meter.red.on {
+		/* Alias for .red */
+	}
+
+	.industrial.led .meter.blue {
+		background: -webkit-linear-gradient(left, rgba(65, 177, 255, 0.75), rgb(0, 133, 255)) !important;
+		background: -moz-linear-gradient(left, rgba(65, 177, 255, 0.75), rgb(0, 133, 255)) !important;
+		background: -o-linear-gradient(left, rgba(65, 177, 255, 0.75), rgb(0, 133, 255)) !important;
+		background: -ms-linear-gradient(left, rgba(65, 177, 255, 0.75), rgb(0, 133, 255)) !important;
+		background: linear-gradient(left, rgba(65, 177, 255, 0.75), rgb(0, 133, 255)) !important;
+		box-shadow: 0 0 1em .05em rgb(0, 154, 255), 0 0 .1em rgb(0, 0, 0) inset;
+	}
+	.industrial.led .meter.blue.on {
+		/* Alias for .blue */
+	}
+
+	.industrial.led .meter.off {
+		background: rgb(184,184,184) !important;
+		box-shadow: 0 0 .1em rgb(0, 0, 0) inset !important;
+	}
+
+	.industrial.led.size.one {
+		height: -webkit-calc(25px * 1);
+		height: -moz-calc(25px * 1);
+		height: -o-calc(25px * 1);
+		height: -ms-calc(25px * 1);
+		height: calc(25px * 1);
+		width: -webkit-calc(25px * 1);
+		width: -moz-calc(25px * 1);
+		width: -o-calc(25px * 1);
+		width: -ms-calc(25px * 1);
+		width: calc(25px * 1);
+	}
+
+	.industrial.led.size.two {
+		height: -webkit-calc(25px * 2);
+		height: -moz-calc(25px * 2);
+		height: -o-calc(25px * 2);
+		height: -ms-calc(25px * 2);
+		height: calc(25px * 2);
+		width: -webkit-calc(25px * 2);
+		width: -moz-calc(25px * 2);
+		width: -o-calc(25px * 2);
+		width: -ms-calc(25px * 2);
+		width: calc(25px * 2);
+	}
+
+	.industrial.led.size.three {
+		height: -webkit-calc(25px * 3);
+		height: -moz-calc(25px * 3);
+		height: -o-calc(25px * 3);
+		height: -ms-calc(25px * 3);
+		height: calc(25px * 3);
+		width: -webkit-calc(25px * 3);
+		width: -moz-calc(25px * 3);
+		width: -o-calc(25px * 3);
+		width: -ms-calc(25px * 3);
+		width: calc(25px * 3);
+	}
+
+	.industrial.led.size.four {
+		height: -webkit-calc(25px * 4);
+		height: -moz-calc(25px * 4);
+		height: -o-calc(25px * 4);
+		height: -ms-calc(25px * 4);
+		height: calc(25px * 4);
+		width: -webkit-calc(25px * 4);
+		width: -moz-calc(25px * 4);
+		width: -o-calc(25px * 4);
+		width: -ms-calc(25px * 4);
+		width: calc(25px * 4);
+	}
+
+	</style>
+	</head>
+
+    <body>
+
+
+	<div class="wrapper">
+		
+		
+
+		<img src='../static/logomchp.png' alt="logo"/>
+	  
+
+		<h2 align="center">AIoT Solution for Industry 4.0</h2>
+	
+		<div class="box10">
+
+			<div class="box-wrapper1"><div class="box1">
+				<!-- <img src="https://ew-2020.s3.us-east-2.amazonaws.com/test_image.jpg" id = "myImage" alt="pegboard" style="width:100%;height:100%;" /> -->
+                <img id = "myImage" alt="pegboard" style="width:100%;height:100%;" src="{{ url_for('video_feed') }}"> 
+			</div></div>
+	   
+			<div class="box-wrapper6"><div class="box6">
+			<b>	ROBOTIC ARM PICK N PLACE PATTERN </b>
+			</div></div>
+	   
+			<div class="box4">
+	   
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led1" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+			
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led2" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led3" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led4" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led5" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led6" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led7" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led8" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led9" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led10" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led11" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led12" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led13" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led14" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led15" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+					
+				<div class="box-wrapper5"><div class="box5">
+					<div id = "led16" class="industrial led size two">
+					<div class="meter green"></div>
+					</div>
+				</div></div>
+		
+			</div>
+		
+		
+			<div class="box-wrapper7"><div class="box7">
+				<textarea id="message0" rows="5" cols="50">Robotic Arm Picking Peg from Position XX</textarea>
+				<!-- <div class="marquee">jQuery marquee is the best marquee plugin in the world</div> -->
+			</div></div>
+	
+			<div class="box9">
+				<div class="box11">
+				<b>	ROBOTIC ARM HEALTH </b>
+				</div>
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">PICK-DROP MOTOR</b>
+					<canvas id="g1"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">AXIS-4 MOTOR</b>
+					<canvas id="g2"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">AXIS-3 MOTOR</b>
+					<canvas id="g3"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">AXIS-2 MOTOR</b>
+					<canvas id="g4"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">AXIS-1 MOTOR</b>
+					<canvas id="g5"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">BASE MOTOR</b>
+					<canvas id="g6"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">PICK-DROP  MOTOR</b>
+					<canvas id="g7"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">AXIS-4 MOTOR</b>
+					<canvas id="g8"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">AXIS-3 MOTOR</b>
+					<canvas id="g9"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">AXIS-2 MOTOR</b>
+					<canvas id="g10"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">AXIS-1 MOTOR</b>
+					<canvas id="g11"></canvas>
+				</div></div>
+				
+				<div class="box-wrapper"><div class="box">
+					<b style="font-size:50%;">BASE MOTOR</b>
+					<canvas id="g12"></canvas>
+				</div></div>
+			</div>
+		</div>
+			
+		<div class="box2">
+			<canvas id="g13"></canvas>
+		</div>
+			
+			
+		<!-- 		BUTTONS -->
+		<div class="box3">
+			<button type="submit" id = "on_off" class="button0">TURN ROBO ON/OFF</button>
+		</div>
+	
+		<!-- <div class="box3"> -->
+			<!-- <button id = "reset" class="button1">RESET</button> -->
+		<!-- </div> -->
+		<!-- <div class="box3"> -->
+			<!-- <button id = "connect" class="button2">CONNECTION STATUS</button> -->
+		<!-- </div> -->
+
+	
+	   
+    </div>  
+
+	
+	<script src="../static/gauge.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../static/industrial.js"></script> 
+	
+    <script type="text/javascript">
+
+	document.addEventListener("DOMContentLoaded", function(event) {
+	  
+	var g1 = new RadialGauge({
+		renderTo: 'g1',
+		value:0,
+		width: 101,
+		height: 101,
+		units: '°C',
+		minValue: 0,
+		maxValue: 120,
+		barWidth: 40,
+		barShadow:1,
+		valueInt: 1,
+		valueDec: 0,
+		valueBox: true,
+		valueBoxStroke: 5,
+		needle:false,
+		highlights:false,
+		animatedValue:true,
+		borders: true,
+		borderShadowWidth: 0,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 0,
+		colorBar:"#BBBBBB",
+		colorUnits:"#000000",
+		fontTitleSize: 54,
+		fontUnitsSize: 75,
+		fontValueSize: 65,
+		fontNumbersSize: 0,
+	}).draw();
+	
+
+	var g2 = new RadialGauge({
+		renderTo: 'g2',
+		value:0,
+		width: 101,
+		height: 101,
+		units: '°C',
+		minValue: 0,
+		maxValue: 120,
+		barWidth: 40,
+		barShadow:1,
+		valueInt: 1,
+		valueDec: 0,
+		valueBox: true,
+		valueBoxStroke: 5,
+		needle:false,
+		highlights:false,
+		animatedValue:true,
+		borders: true,
+		borderShadowWidth: 0,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 0,
+		colorBar:"#BBBBBB",
+		colorUnits:"#000000",
+		fontTitleSize: 54,
+		fontUnitsSize: 75,
+		fontValueSize: 65,
+		fontNumbersSize: 0,
+	}).draw();
+
+	var g3 = new RadialGauge({
+		renderTo: 'g3',
+		value:0,
+		width: 101,
+		height: 101,
+		units: '°C',
+		minValue: 0,
+		maxValue: 120,
+		barWidth: 40,
+		barShadow:1,
+		valueInt: 1,
+		valueDec: 0,
+		valueBox: true,
+		valueBoxStroke: 5,
+		needle:false,
+		highlights:false,
+		animatedValue:true,
+		borders: true,
+		borderShadowWidth: 0,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 0,
+		colorBar:"#BBBBBB",
+		colorUnits:"#000000",
+		fontTitleSize: 54,
+		fontUnitsSize: 75,
+		fontValueSize: 65,
+		fontNumbersSize: 0,
+	}).draw();
+
+	var g4 = new RadialGauge({
+		renderTo: 'g4',
+		value:0,
+		width: 101,
+		height: 101,
+		units: '°C',
+		minValue: 0,
+		maxValue: 120,
+		barWidth: 40,
+		barShadow:1,
+		valueInt: 1,
+		valueDec: 0,
+		valueBox: true,
+		valueBoxStroke: 5,
+		needle:false,
+		highlights:false,
+		animatedValue:true,
+		borders: true,
+		borderShadowWidth: 0,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 0,
+		colorBar:"#BBBBBB",
+		colorUnits:"#000000",
+		fontTitleSize: 54,
+		fontUnitsSize: 75,
+		fontValueSize: 65,
+		fontNumbersSize: 0,
+	}).draw();
+	
+	var g5 = new RadialGauge({
+		renderTo: 'g5',
+		value:0,
+		width: 101,
+		height: 101,
+		units: '°C',
+		minValue: 0,
+		maxValue: 120,
+		barWidth: 40,
+		barShadow:1,
+		valueInt: 1,
+		valueDec: 0,
+		valueBox: true,
+		valueBoxStroke: 5,
+		needle:false,
+		highlights:false,
+		animatedValue:true,
+		borders: true,
+		borderShadowWidth: 0,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 0,
+		colorBar:"#BBBBBB",
+		colorUnits:"#000000",
+		fontTitleSize: 54,
+		fontUnitsSize: 75,
+		fontValueSize: 65,
+		fontNumbersSize: 0,
+	}).draw();
+
+	var g6 = new RadialGauge({
+		renderTo: 'g6',
+		value:0,
+		width: 101,
+		height: 101,
+		units: '°C',
+		minValue: 0,
+		maxValue: 120,
+		barWidth: 40,
+		barShadow:1,
+		valueInt: 1,
+		valueDec: 0,
+		valueBox: true,
+		valueBoxStroke: 5,
+		needle:false,
+		highlights:false,
+		animatedValue:true,
+		borders: true,
+		borderShadowWidth: 0,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 0,
+		colorBar:"#BBBBBB",
+		colorUnits:"#000000",
+		fontTitleSize: 54,
+		fontUnitsSize: 75,
+		fontValueSize: 65,
+		fontNumbersSize: 0,
+	}).draw();
+	  
+	var g7 = new RadialGauge({
+		renderTo: 'g7',
+		width: 101,
+		height: 101,
+		units: 'V',
+		minValue: 0,
+		maxValue: 12,
+		majorTicks: [
+			'0',
+			'2',
+			'4',
+			'6',
+			'8',
+			'10',
+			'12'
+		],
+		minorTicks: 0.1,
+		ticksAngle: 270,
+		startAngle: 45,
+		strokeTicks: true,
+		highlights  : [
+			{ from : 0.0, to : 5.0, color : 'rgba(0,255,255,1)' },
+			{ from : 5.1,  to : 8.0, color : 'rgba(0,255,0,1)' },
+			{ from : 8.1, to : 12.0, color : 'rgba(255,0,0,1)' }
+		],
+		valueInt: 0,
+		valueDec: 1,
+		colorPlate: "#fff",
+		colorMajorTicks: "#686868",
+		colorMinorTicks: "#686868",
+		colorTitle: "#000",
+		colorUnits: "#000",
+		colorNumbers: "#686868",
+		valueBox: true,
+		colorValueText: "#000",
+		colorValueBoxRect: "#222",
+		colorValueBoxRectEnd: "#333",
+		colorValueBoxBackground: "#fff",
+		colorValueBoxShadow: false,
+		colorValueTextShadow: false,
+		colorNeedleShadowUp: true,
+		colorNeedleShadowDown: false,
+		colorNeedle: "rgba(200, 50, 50, .75)",
+		colorNeedleEnd: "rgba(200, 50, 50, .75)",
+		colorNeedleCircleOuter: "rgba(200, 200, 200, 1)",
+		colorNeedleCircleOuterEnd: "rgba(200, 200, 200, 1)",
+		borderShadowWidth: 0,
+		borders: false,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 5,
+		colorBorderOuter: "#fafafa",
+		colorBorderOuterEnd: "#cdcdcd",
+		needleType: "arrow",
+		needleWidth: 10,
+		needleCircleSize: 7,
+		needleCircleOuter: true,
+		needleCircleInner: false,
+		animationDuration: 1500,
+		animationRule: "dequint",
+		fontNumbers: "Verdana",
+		fontTitle: "Verdana",
+		fontUnits: "Verdana",
+		fontValue: "Led",
+		fontValueStyle: 'bold',
+		fontNumbersSize: 30,
+		fontNumbersStyle: 'bold',
+		fontNumbersWeight: 'bold',
+		fontTitleSize: 24,
+		fontUnitsSize: 75,
+		fontValueSize: 50,
+		animatedValue: true
+	}).draw();
+	  	  
+	var g8 = new RadialGauge({
+		renderTo: 'g8',
+		width: 101,
+		height: 101,
+		units: 'V',
+		minValue: 0,
+		maxValue: 12,
+		majorTicks: [
+			'0',
+			'2',
+			'4',
+			'6',
+			'8',
+			'10',
+			'12'
+		],
+		minorTicks: 0.1,
+		ticksAngle: 270,
+		startAngle: 45,
+		strokeTicks: true,
+		highlights  : [
+			{ from : 0.0, to : 5.0, color : 'rgba(0,255,255,1)' },
+			{ from : 5.1,  to : 8.0, color : 'rgba(0,255,0,1)' },
+			{ from : 8.1, to : 12.0, color : 'rgba(255,0,0,1)' }
+		],
+		valueInt: 0,
+		valueDec: 1,
+		colorPlate: "#fff",
+		colorMajorTicks: "#686868",
+		colorMinorTicks: "#686868",
+		colorTitle: "#000",
+		colorUnits: "#000",
+		colorNumbers: "#686868",
+		valueBox: true,
+		colorValueText: "#000",
+		colorValueBoxRect: "#222",
+		colorValueBoxRectEnd: "#333",
+		colorValueBoxBackground: "#fff",
+		colorValueBoxShadow: false,
+		colorValueTextShadow: false,
+		colorNeedleShadowUp: true,
+		colorNeedleShadowDown: false,
+		colorNeedle: "rgba(200, 50, 50, .75)",
+		colorNeedleEnd: "rgba(200, 50, 50, .75)",
+		colorNeedleCircleOuter: "rgba(200, 200, 200, 1)",
+		colorNeedleCircleOuterEnd: "rgba(200, 200, 200, 1)",
+		borderShadowWidth: 0,
+		borders: false,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 5,
+		colorBorderOuter: "#fafafa",
+		colorBorderOuterEnd: "#cdcdcd",
+		needleType: "arrow",
+		needleWidth: 10,
+		needleCircleSize: 7,
+		needleCircleOuter: true,
+		needleCircleInner: false,
+		animationDuration: 1500,
+		animationRule: "dequint",
+		fontNumbers: "Verdana",
+		fontTitle: "Verdana",
+		fontUnits: "Verdana",
+		fontValue: "Led",
+		fontValueStyle: 'bold',
+		fontNumbersSize: 30,
+		fontNumbersStyle: 'bold',
+		fontNumbersWeight: 'bold',
+		fontTitleSize: 24,
+		fontUnitsSize: 75,
+		fontValueSize: 50,
+		animatedValue: true
+	}).draw();
+	  	  
+	var g9 = new RadialGauge({
+		renderTo: 'g9',
+		width: 101,
+		height: 101,
+		units: 'V',
+		minValue: 0,
+		maxValue: 12,
+		majorTicks: [
+			'0',
+			'2',
+			'4',
+			'6',
+			'8',
+			'10',
+			'12'
+		],
+		minorTicks: 0.1,
+		ticksAngle: 270,
+		startAngle: 45,
+		strokeTicks: true,
+		highlights  : [
+			{ from : 0.0, to : 5.0, color : 'rgba(0,255,255,1)' },
+			{ from : 5.1,  to : 8.0, color : 'rgba(0,255,0,1)' },
+			{ from : 8.1, to : 12.0, color : 'rgba(255,0,0,1)' }
+		],
+		valueInt: 0,
+		valueDec: 1,
+		colorPlate: "#fff",
+		colorMajorTicks: "#686868",
+		colorMinorTicks: "#686868",
+		colorTitle: "#000",
+		colorUnits: "#000",
+		colorNumbers: "#686868",
+		valueBox: false,
+		valueBox: true,
+		colorValueText: "#000",
+		colorValueBoxRect: "#222",
+		colorValueBoxRectEnd: "#333",
+		colorValueBoxBackground: "#fff",
+		colorValueBoxShadow: false,
+		colorValueTextShadow: false,
+		colorNeedleShadowUp: true,
+		colorNeedleShadowDown: false,
+		colorNeedle: "rgba(200, 50, 50, .75)",
+		colorNeedleEnd: "rgba(200, 50, 50, .75)",
+		colorNeedleCircleOuter: "rgba(200, 200, 200, 1)",
+		colorNeedleCircleOuterEnd: "rgba(200, 200, 200, 1)",
+		borderShadowWidth: 0,
+		borders: false,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 5,
+		colorBorderOuter: "#fafafa",
+		colorBorderOuterEnd: "#cdcdcd",
+		needleType: "arrow",
+		needleWidth: 10,
+		needleCircleSize: 7,
+		needleCircleOuter: true,
+		needleCircleInner: false,
+		animationDuration: 1500,
+		animationRule: "dequint",
+		fontNumbers: "Verdana",
+		fontTitle: "Verdana",
+		fontUnits: "Verdana",
+		fontValue: "Led",
+		fontValueStyle: 'bold',
+		fontNumbersSize: 30,
+		fontNumbersStyle: 'bold',
+		fontNumbersWeight: 'bold',
+		fontTitleSize: 24,
+		fontUnitsSize: 75,
+		fontValueSize: 50,
+		animatedValue: true
+	}).draw();
+	  
+	var g10 = new RadialGauge({
+		renderTo: 'g10',
+		width: 101,
+		height: 101,
+		units: 'V',
+		minValue: 0,
+		maxValue: 12,
+		majorTicks: [
+			'0',
+			'2',
+			'4',
+			'6',
+			'8',
+			'10',
+			'12'
+		],
+		minorTicks: 0.1,
+		ticksAngle: 270,
+		startAngle: 45,
+		strokeTicks: true,
+		highlights  : [
+			{ from : 0.0, to : 5.0, color : 'rgba(0,255,255,1)' },
+			{ from : 5.1,  to : 8.0, color : 'rgba(0,255,0,1)' },
+			{ from : 8.1, to : 12.0, color : 'rgba(255,0,0,1)' }
+		],
+		valueInt: 0,
+		valueDec: 1,
+		colorPlate: "#fff",
+		colorMajorTicks: "#686868",
+		colorMinorTicks: "#686868",
+		colorTitle: "#000",
+		colorUnits: "#000",
+		colorNumbers: "#686868",
+		valueBox: true,
+		colorValueText: "#000",
+		colorValueBoxRect: "#222",
+		colorValueBoxRectEnd: "#333",
+		colorValueBoxBackground: "#fff",
+		colorValueBoxShadow: false,
+		colorValueTextShadow: false,
+		colorNeedleShadowUp: true,
+		colorNeedleShadowDown: false,
+		colorNeedle: "rgba(200, 50, 50, .75)",
+		colorNeedleEnd: "rgba(200, 50, 50, .75)",
+		colorNeedleCircleOuter: "rgba(200, 200, 200, 1)",
+		colorNeedleCircleOuterEnd: "rgba(200, 200, 200, 1)",
+		borderShadowWidth: 0,
+		borders: false,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 5,
+		colorBorderOuter: "#fafafa",
+		colorBorderOuterEnd: "#cdcdcd",
+		needleType: "arrow",
+		needleWidth: 10,
+		needleCircleSize: 7,
+		needleCircleOuter: true,
+		needleCircleInner: false,
+		animationDuration: 1500,
+		animationRule: "dequint",
+		fontNumbers: "Verdana",
+		fontTitle: "Verdana",
+		fontUnits: "Verdana",
+		fontValue: "Led",
+		fontValueStyle: 'bold',
+		fontNumbersSize: 30,
+		fontNumbersStyle: 'bold',
+		fontNumbersWeight: 'bold',
+		fontTitleSize: 24,
+		fontUnitsSize: 75,
+		fontValueSize: 50,
+		animatedValue: true
+	}).draw();
+	  
+	var g11 = new RadialGauge({
+		renderTo: 'g11',
+		width: 101,
+		height: 101,
+		units: 'V',
+		minValue: 0,
+		maxValue: 12,
+		majorTicks: [
+			'0',
+			'2',
+			'4',
+			'6',
+			'8',
+			'10',
+			'12'
+		],
+		minorTicks: 0.1,
+		ticksAngle: 270,
+		startAngle: 45,
+		strokeTicks: true,
+		highlights  : [
+			{ from : 0.0, to : 5.0, color : 'rgba(0,255,255,1)' },
+			{ from : 5.1,  to : 8.0, color : 'rgba(0,255,0,1)' },
+			{ from : 8.1, to : 12.0, color : 'rgba(255,0,0,1)' }
+		],
+		valueInt: 0,
+		valueDec: 1,
+		colorPlate: "#fff",
+		colorMajorTicks: "#686868",
+		colorMinorTicks: "#686868",
+		colorTitle: "#000",
+		colorUnits: "#000",
+		colorNumbers: "#686868",
+		valueBox: false,
+		valueBox: true,
+		colorValueText: "#000",
+		colorValueBoxRect: "#222",
+		colorValueBoxRectEnd: "#333",
+		colorValueBoxBackground: "#fff",
+		colorValueBoxShadow: false,
+		colorValueTextShadow: false,
+		colorNeedleShadowUp: true,
+		colorNeedleShadowDown: false,
+		colorNeedle: "rgba(200, 50, 50, .75)",
+		colorNeedleEnd: "rgba(200, 50, 50, .75)",
+		colorNeedleCircleOuter: "rgba(200, 200, 200, 1)",
+		colorNeedleCircleOuterEnd: "rgba(200, 200, 200, 1)",
+		borderShadowWidth: 0,
+		borders: false,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 5,
+		colorBorderOuter: "#fafafa",
+		colorBorderOuterEnd: "#cdcdcd",
+		needleType: "arrow",
+		needleWidth: 10,
+		needleCircleSize: 7,
+		needleCircleOuter: true,
+		needleCircleInner: false,
+		animationDuration: 1500,
+		animationRule: "dequint",
+		fontNumbers: "Verdana",
+		fontTitle: "Verdana",
+		fontUnits: "Verdana",
+		fontValue: "Led",
+		fontValueStyle: 'bold',
+		fontNumbersSize: 30,
+		fontNumbersStyle: 'bold',
+		fontNumbersWeight: 'bold',
+		fontTitleSize: 24,
+		fontUnitsSize: 75,
+		fontValueSize: 50,
+		animatedValue: true
+	}).draw();
+	  
+	  
+	var g12 = new RadialGauge({
+		renderTo: 'g12',
+		width: 101,
+		height: 101,
+		units: 'V',
+		minValue: 0,
+		maxValue: 12,
+		majorTicks: [
+			'0',
+			'2',
+			'4',
+			'6',
+			'8',
+			'10',
+			'12'
+		],
+		minorTicks: 0.1,
+		ticksAngle: 270,
+		startAngle: 45,
+		strokeTicks: true,
+		highlights  : [
+			{ from : 0.0, to : 5.0, color : 'rgba(0,255,255,1)' },
+			{ from : 5.1,  to : 8.0, color : 'rgba(0,255,0,1)' },
+			{ from : 8.1, to : 12.0, color : 'rgba(255,0,0,1)' }
+		],
+		valueInt: 0,
+		valueDec: 1,
+		colorPlate: "#fff",
+		colorMajorTicks: "#686868",
+		colorMinorTicks: "#686868",
+		colorTitle: "#000",
+		colorUnits: "#000",
+		colorNumbers: "#686868",
+		valueBox: true,
+		colorValueText: "#000",
+		colorValueBoxRect: "#222",
+		colorValueBoxRectEnd: "#333",
+		colorValueBoxBackground: "#fff",
+		colorValueBoxShadow: true,
+		colorValueTextShadow: false,
+		colorNeedleShadowUp: true,
+		colorNeedleShadowDown: false,
+		colorNeedle: "rgba(200, 50, 50, .75)",
+		colorNeedleEnd: "rgba(200, 50, 50, .75)",
+		colorNeedleCircleOuter: "rgba(200, 200, 200, 1)",
+		colorNeedleCircleOuterEnd: "rgba(200, 200, 200, 1)",
+		borderShadowWidth: 0,
+		borders: false,
+		borderInnerWidth: 0,
+		borderMiddleWidth: 0,
+		borderOuterWidth: 5,
+		colorBorderOuter: "#fafafa",
+		colorBorderOuterEnd: "#cdcdcd",
+		needleType: "arrow",
+		needleWidth: 10,
+		needleCircleSize: 7,
+		needleCircleOuter: true,
+		needleCircleInner: false,
+		animationDuration: 1500,
+		animationRule: "dequint",
+		fontNumbers: "Verdana",
+		fontTitle: "Verdana",
+		fontUnits: "Verdana",
+		fontValue: "Led",
+		fontValueStyle: 'bold',
+		fontNumbersSize: 30,
+		fontNumbersStyle: 'bold',
+		fontNumbersWeight: 'bold',
+		fontTitleSize: 24,
+		fontUnitsSize: 75,
+		fontValueSize: 50,
+		animatedValue: true
+	}).draw();
+	  
+	  var g13 = new LinearGauge({
+		renderTo: 'g13',
+		width: 175,
+		height: 773,
+		units: "°C",
+		title:"Room Temperature",
+		borderRadius:0,
+		borders:0,
+		barWidth:5,
+		barBeginCircle:25,
+		value: 0,
+		minValue:0,
+		maxValue:100,
+		colorNeedle:"#000000",
+		colorTitle: "#000",
+		fontTitle: "bold",
+		fontTitleSize: 24,
+		colorBar:"#FFFFFF",
+		colorBarProgress:"#008000",
+		valueBox:true,
+	}).draw();
+	
+	on_off_flag = 0 ;
+    on_off_flag_temp = 0;
+	
+		$(function() 
+		{ 
+		
+			 $("#select-pic").on("change",function(e){
+				var url = $(this).find(':selected').data('pic-url');
+     
+					 if(url) {
+						$("#picture").attr('src',url);
+					 }
+					 else {
+						$("#picture").attr("src", "");
+					 }
+				  })
+
+			$("#on_off").click(function (e) {
+				e.preventDefault();
+				
+				//var value = $("#textbox").val();
+				//alert(value);
+				
+				if(!on_off_flag)
+				{
+					document.getElementById("on_off").style.backgroundColor = "#3e8e41";
+					<!-- document.getElementById("reset").style.backgroundColor = "#3e8e41"; -->
+					<!-- document.getElementById("connect").style.backgroundColor = "#3e8e41"; -->
+					on_off_flag = 1 ;
+				}
+				else
+				{
+					document.getElementById("on_off").style.backgroundColor = "#FF0000";
+					<!-- document.getElementById("reset").style.backgroundColor = "#FF0000"; -->
+					<!-- document.getElementById("connect").style.backgroundColor = "#FF0000"; -->
+					on_off_flag = 0 ;
+				}
+				
+				$.ajax({
+					type: "POST",
+					url: "robo_on_off",
+					data: {'value': on_off_flag},
+					success: function (data) {
+					//alert(JSON.stringify(data));
+					}
+				});
+
+			});
+		 });	 
+		 
+		 var obj;
+
+		setInterval(function() {
+		    $.ajax({
+            url: "/webupdate",
+		    type: "GET",
+            dataType: "json",
+            success: function(resp) 
+		{						
+			
+			obj = resp;
+			
+			if(obj.Motor_Temperature)
+			{
+				g1.update({ value: obj.Motor_Temperature.PICK_DROP_MOTOR_ID});
+				if (obj.Motor_Temperature.PICK_DROP_MOTOR_ID <= 15) {
+					g1.update({ colorBarProgress:"#0000FF" });
+				} else if (obj.Motor_Temperature.PICK_DROP_MOTOR_ID >= 16 && obj.Motor_Temperature.PICK_DROP_MOTOR_ID <=50) {
+					g1.update({ colorBarProgress:"#008000" });
+				} else if (obj.Motor_Temperature.PICK_DROP_MOTOR_ID >= 50) {
+					g1.update({ colorBarProgress:"#FF0000" });
+				}
+				
+				g2.update({ value: obj.Motor_Temperature.AXIS_4_MOTOR_ID});
+				if (obj.Motor_Temperature.AXIS_4_MOTOR_ID <= 15) {
+					g2.update({ colorBarProgress:"#0000FF" });
+				} else if (obj.Motor_Temperature.AXIS_4_MOTOR_ID >= 16 && obj.Motor_Temperature.AXIS_4_MOTOR_ID <=50) {
+					g2.update({ colorBarProgress:"#008000" });
+				} else if (obj.Motor_Temperature.AXIS_4_MOTOR_ID >= 50) {
+					g2.update({ colorBarProgress:"#FF0000" });
+				}
+				
+				g3.update({ value: obj.Motor_Temperature.AXIS_3_MOTOR_ID});
+				if (obj.Motor_Temperature.AXIS_3_MOTOR_ID <= 15) {
+					g3.update({ colorBarProgress:"#0000FF" });
+				} else if (obj.Motor_Temperature.AXIS_3_MOTOR_ID >= 16 && obj.Motor_Temperature.AXIS_3_MOTOR_ID <=50) {
+					g3.update({ colorBarProgress:"#008000" });
+				} else if (obj.Motor_Temperature.AXIS_3_MOTOR_ID >= 50) {
+					g3.update({ colorBarProgress:"#FF0000" });
+				}
+				
+				g4.update({ value: obj.Motor_Temperature.AXIS_2_MOTOR_ID});
+				if (obj.Motor_Temperature.AXIS_2_MOTOR_ID <= 15) {
+					g4.update({ colorBarProgress:"#0000FF" });
+				} else if (obj.Motor_Temperature.AXIS_2_MOTOR_ID >= 16 && obj.Motor_Temperature.AXIS_2_MOTOR_ID <=50) {
+					g4.update({ colorBarProgress:"#008000" });
+				} else if (obj.Motor_Temperature.AXIS_2_MOTOR_ID >= 50) {
+					g4.update({ colorBarProgress:"#FF0000" });
+				}
+				
+				g5.update({ value: obj.Motor_Temperature.AXIS_5_MOTOR_ID});
+				if (obj.Motor_Temperature.AXIS_5_MOTOR_ID <= 15) {
+					g5.update({ colorBarProgress:"#0000FF" });
+				} else if (obj.Motor_Temperature.AXIS_5_MOTOR_ID >= 16 && obj.Motor_Temperature.AXIS_5_MOTOR_ID <=50) {
+					g5.update({ colorBarProgress:"#008000" });
+				} else if (obj.Motor_Temperature.AXIS_5_MOTOR_ID >= 50) {
+					g5.update({ colorBarProgress:"#FF0000" });
+				}
+				
+				g6.update({ value: obj.Motor_Temperature.BASE_MOTOR_ID});
+				if (obj.Motor_Temperature.BASE_MOTOR_ID <= 15) {
+					g6.update({ colorBarProgress:"#0000FF" });
+				} else if (obj.Motor_Temperature.BASE_MOTOR_ID >= 16 && obj.Motor_Temperature.BASE_MOTOR_ID <=50) {
+					g6.update({ colorBarProgress:"#008000" });
+				} else if (obj.Motor_Temperature.BASE_MOTOR_ID >= 50) {
+					g6.update({ colorBarProgress:"#FF0000" });
+				}
+				
+				g13.update({ value:obj.Motor_Temperature.ROOM_TEMPERATURE_1_ID});
+				if (obj.Motor_Temperature.ROOM_TEMPERATURE_1_ID < 15) {
+					g13.update({ colorBarProgress:"#0000FF" });
+				} else if (obj.Motor_Temperature.ROOM_TEMPERATURE_1_ID >= 16 && obj.Motor_Temperature.ROOM_TEMPERATURE_1_ID <=45) {
+					g13.update({ colorBarProgress:"#008000" });
+				} else if (obj.Motor_Temperature.ROOM_TEMPERATURE_1_ID >= 46) {
+					g13.update({ colorBarProgress:"#FF0000" });
+				}
+			}
+			
+			if(obj.Motor_Voltage)
+			{	
+				g7.update({ value:obj.Motor_Voltage.PICK_DROP_MOTOR_ID});
+				g8.update({ value:obj.Motor_Voltage.AXIS_4_MOTOR_ID});
+				g9.update({ value:obj.Motor_Voltage.AXIS_3_MOTOR_ID});
+				g10.update({ value:obj.Motor_Voltage.AXIS_2_MOTOR_ID});
+				g11.update({ value:obj.Motor_Voltage.AXIS_5_MOTOR_ID});
+				g12.update({ value:obj.Motor_Voltage.BASE_MOTOR_ID});
+			}
+			if(obj.ROBO_ONOFF)
+			{	
+				on_off_flag_temp = obj.ROBO_ONOFF.OnOffStatus;
+                if(on_off_flag != on_off_flag_temp)
+                {
+                    console.log("test");
+                    console.log(obj.ROBO_ONOFF.OnOffStatus)
+                    console.log(on_off_flag_temp);
+                    console.log(on_off_flag);
+                    on_off_flag = on_off_flag_temp;
+                    console.log(on_off_flag);
+                    if(on_off_flag)
+                    {
+                        document.getElementById("on_off").style.backgroundColor = "#3e8e41";
+                        <!-- document.getElementById("reset").style.backgroundColor = "#3e8e41"; -->
+                        <!-- document.getElementById("connect").style.backgroundColor = "#3e8e41"; -->
+                    }
+                    else
+                    {
+                        document.getElementById("on_off").style.backgroundColor = "#FF0000";
+                        <!-- document.getElementById("reset").style.backgroundColor = "#FF0000"; -->
+                        <!-- document.getElementById("connect").style.backgroundColor = "#FF0000"; -->
+                        console.log("else case");
+                        console.log(on_off_flag);
+                        console.log(on_off_flag_temp);
+                    }
+                }
+                if(obj.ROBO_ONOFF.image_update)
+                {
+                    <!-- document.getElementById('myImage').src = 'https://ew-2020.s3.us-east-2.amazonaws.com/test_image.jpg?' + new Date().getTime() -->
+                    document.getElementById('myImage').src ='{{ url_for('video_feed') }}';
+                }
+			}			
+
+			if(obj.ROBO_MESSAGE)
+			{	
+				document.getElementById('message0').value = obj.ROBO_MESSAGE.msg;
+			}
+			
+			if(obj.Robo_Pattern)
+			{
+				$("#led1").industrial(obj.Robo_Pattern.A4);
+				$("#led2").industrial(obj.Robo_Pattern.B4);
+				$("#led3").industrial(obj.Robo_Pattern.C4);
+				$("#led4").industrial(obj.Robo_Pattern.D4);
+				$("#led5").industrial(obj.Robo_Pattern.A3);
+				$("#led6").industrial(obj.Robo_Pattern.B3);
+				$("#led7").industrial(obj.Robo_Pattern.C3);
+				$("#led8").industrial(obj.Robo_Pattern.D3);
+				$("#led9").industrial(obj.Robo_Pattern.A2);
+				$("#led10").industrial(obj.Robo_Pattern.B2);
+				$("#led11").industrial(obj.Robo_Pattern.C2);
+				$("#led12").industrial(obj.Robo_Pattern.D2);
+				$("#led13").industrial(obj.Robo_Pattern.A1);
+				$("#led14").industrial(obj.Robo_Pattern.B1);
+				$("#led15").industrial(obj.Robo_Pattern.C1);
+				$("#led16").industrial(obj.Robo_Pattern.D1);
+			}			
+			
+        }
+		  
+        });
+        }, 1000);
+	});
+	  
+  </script>
+ </body>
+</html>

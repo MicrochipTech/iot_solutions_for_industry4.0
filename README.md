@@ -60,7 +60,7 @@ The automation operations described earlier can only be possible if robot is ful
 
 To ensure real time operations, with high robustness and security, gateway is based on SAM9X75 MPU running a Linux Operating system, with robust Wifi Link Controller (ATWILC1000) fully tested for interoperability and CE/FCC/IC certified
 </br></br>
-<img src="Doc/som_wilc_linux.png" alt="drawing" width="200"/>
+<img src="Doc/sam9x75_wilsc02.jpg" alt="drawing" width="200"/>
 </br></br>
 Sensors are connected to the gateway thru a Zigbee network, based on WBZ451 Module and its associated development kit <a href="https://www.microchip.com/en-us/development-tool/EV96B94A" target="_blank">(see PIC32CX-BZ2 and WBZ451 Curiosity Development Board from Microchip)</a></br>
 WBZ451 supports differnt protocol such as IEEE 802.15.4 PHY based protocols, Microchip's own MiWi Networking protocols for self-healing Point-to-point, Star and Mesh networking, Thread and Zigbee (see <a href="https://www.microchip.com/en-us/products/wireless-connectivity/zigbee" target="_blank">Microchip Zigbee Home page</a>). This is the network we will use here in this demo.</br>
@@ -70,7 +70,7 @@ WBZ451 supports differnt protocol such as IEEE 802.15.4 PHY based protocols, Mic
     - Sensors set-up as “End Device”
     - Sensor 1 acquires the ambient temperature 
     - Sensor 2 acquires the vibration of arm robot, to implement predictive maintenance 
-<img src="Doc/demo_network.png" alt="drawing" width="560"/></br>
+<img src="Doc/demo_network_sam9x.png" alt="drawing" width="560"/></br>
 </br>
 Built for Industry 4.0, this demo is covering 4 use cases:</br>
 - Use case 1 - Standalone mode (OFF Line) : application data pushed to SmartPhone (Wifi Gateway is set in SoftAP mode) while sensor data gets collected via robust Zigbee® Mesh network (see Zigbee® MCU Products)

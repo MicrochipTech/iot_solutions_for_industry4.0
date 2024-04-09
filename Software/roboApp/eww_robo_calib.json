@@ -1,0 +1,201 @@
+{
+    "A1": {
+        "AXIS_2_MOTOR_ID": 135,
+        "AXIS_3_MOTOR_ID": 144,
+        "AXIS_4_MOTOR_ID": 160,
+        "AXIS_5_MOTOR_ID": 67,
+        "BASE_MOTOR_ID": 65
+    },
+    "A2": {
+        "AXIS_2_MOTOR_ID": 109,
+        "AXIS_3_MOTOR_ID": 170,
+        "AXIS_4_MOTOR_ID": 162,
+        "AXIS_5_MOTOR_ID": 56,
+        "BASE_MOTOR_ID": 87
+    },
+    "A3": {
+        "AXIS_2_MOTOR_ID": 131,
+        "AXIS_3_MOTOR_ID": 149,
+        "AXIS_4_MOTOR_ID": 160,
+        "AXIS_5_MOTOR_ID": 95,
+        "BASE_MOTOR_ID": 96
+    },
+    "A4": {
+        "AXIS_2_MOTOR_ID": 116,
+        "AXIS_3_MOTOR_ID": 153,
+        "AXIS_4_MOTOR_ID": 164,
+        "AXIS_5_MOTOR_ID": 120,
+        "BASE_MOTOR_ID": 126
+    },
+    "A5": {
+        "AXIS_2_MOTOR_ID": 90,
+        "AXIS_3_MOTOR_ID": 90,
+        "AXIS_4_MOTOR_ID": 90,
+        "AXIS_5_MOTOR_ID": 90,
+        "BASE_MOTOR_ID": 90,
+        "PICK_DROP_MOTOR_ID": 90
+    },
+    "B1": {
+        "AXIS_2_MOTOR_ID": 122,
+        "AXIS_3_MOTOR_ID": 148,
+        "AXIS_4_MOTOR_ID": 156,
+        "AXIS_5_MOTOR_ID": 73,
+        "BASE_MOTOR_ID": 81
+    },
+    "B2": {
+        "AXIS_2_MOTOR_ID": 122,
+        "AXIS_3_MOTOR_ID": 149,
+        "AXIS_4_MOTOR_ID": 162,
+        "AXIS_5_MOTOR_ID": 86,
+        "BASE_MOTOR_ID": 85
+    },
+    "B3": {
+        "AXIS_2_MOTOR_ID": 122,
+        "AXIS_3_MOTOR_ID": 146,
+        "AXIS_4_MOTOR_ID": 156,
+        "AXIS_5_MOTOR_ID": 106,
+        "BASE_MOTOR_ID": 108
+    },
+    "B4": {
+        "AXIS_2_MOTOR_ID": 129,
+        "AXIS_3_MOTOR_ID": 136,
+        "AXIS_4_MOTOR_ID": 160,
+        "AXIS_5_MOTOR_ID": 112,
+        "BASE_MOTOR_ID": 121
+    },
+    "B5": {
+        "AXIS_2_MOTOR_ID": 90,
+        "AXIS_3_MOTOR_ID": 90,
+        "AXIS_4_MOTOR_ID": 90,
+        "AXIS_5_MOTOR_ID": 90,
+        "BASE_MOTOR_ID": 90,
+        "PICK_DROP_MOTOR_ID": 90
+    },
+    "C1": {
+        "AXIS_2_MOTOR_ID": 165,
+        "AXIS_3_MOTOR_ID": 101,
+        "AXIS_4_MOTOR_ID": 147,
+        "AXIS_5_MOTOR_ID": 69,
+        "BASE_MOTOR_ID": 74
+    },
+    "C2": {
+        "AXIS_2_MOTOR_ID": 143,
+        "AXIS_3_MOTOR_ID": 139,
+        "AXIS_4_MOTOR_ID": 131,
+        "AXIS_5_MOTOR_ID": 99,
+        "BASE_MOTOR_ID": 89
+    },
+    "C3": {
+        "AXIS_2_MOTOR_ID": 161,
+        "AXIS_3_MOTOR_ID": 101,
+        "AXIS_4_MOTOR_ID": 155,
+        "AXIS_5_MOTOR_ID": 94,
+        "BASE_MOTOR_ID": 95
+    },
+    "C4": {
+        "AXIS_2_MOTOR_ID": 147,
+        "AXIS_3_MOTOR_ID": 103,
+        "AXIS_4_MOTOR_ID": 162,
+        "AXIS_5_MOTOR_ID": 116,
+        "BASE_MOTOR_ID": 116
+    },
+    "C5": {
+        "AXIS_2_MOTOR_ID": 90,
+        "AXIS_3_MOTOR_ID": 90,
+        "AXIS_4_MOTOR_ID": 90,
+        "AXIS_5_MOTOR_ID": 90,
+        "BASE_MOTOR_ID": 90,
+        "PICK_DROP_MOTOR_ID": 90
+    },
+    "D1": {
+        "AXIS_2_MOTOR_ID": 147,
+        "AXIS_3_MOTOR_ID": 119,
+        "AXIS_4_MOTOR_ID": 145,
+        "AXIS_5_MOTOR_ID": 89,
+        "BASE_MOTOR_ID": 79
+    },
+    "D2": {
+        "AXIS_2_MOTOR_ID": 137,
+        "AXIS_3_MOTOR_ID": 138,
+        "AXIS_4_MOTOR_ID": 127,
+        "AXIS_5_MOTOR_ID": 86,
+        "BASE_MOTOR_ID": 84
+    },
+    "D3": {
+        "AXIS_2_MOTOR_ID": 122,
+        "AXIS_3_MOTOR_ID": 181,
+        "AXIS_4_MOTOR_ID": 90,
+        "AXIS_5_MOTOR_ID": 96,
+        "BASE_MOTOR_ID": 84
+    },
+    "D4": {
+        "AXIS_2_MOTOR_ID": 132,
+        "AXIS_3_MOTOR_ID": 187,
+        "AXIS_4_MOTOR_ID": 63,
+        "AXIS_5_MOTOR_ID": 96,
+        "BASE_MOTOR_ID": 75
+    },
+    "D5": {
+        "AXIS_2_MOTOR_ID": 90,
+        "AXIS_3_MOTOR_ID": 90,
+        "AXIS_4_MOTOR_ID": 90,
+        "AXIS_5_MOTOR_ID": 90,
+        "BASE_MOTOR_ID": 90,
+        "PICK_DROP_MOTOR_ID": 90
+    },
+    "DP": {
+        "AXIS_2_MOTOR_ID": 120,
+        "AXIS_3_MOTOR_ID": 117,
+        "AXIS_4_MOTOR_ID": 105,
+        "AXIS_5_MOTOR_ID": 98,
+        "BASE_MOTOR_ID": 77
+    },
+    "E1": {
+        "AXIS_2_MOTOR_ID": 139,
+        "AXIS_3_MOTOR_ID": 122,
+        "AXIS_4_MOTOR_ID": 137,
+        "BASE_MOTOR_ID": 67
+    },
+    "E2": {
+        "AXIS_2_MOTOR_ID": 136,
+        "AXIS_3_MOTOR_ID": 122,
+        "AXIS_4_MOTOR_ID": 142,
+        "BASE_MOTOR_ID": 75
+    },
+    "E3": {
+        "AXIS_2_MOTOR_ID": 128,
+        "AXIS_3_MOTOR_ID": 132,
+        "AXIS_4_MOTOR_ID": 137,
+        "BASE_MOTOR_ID": 81
+    },
+    "E4": {
+        "AXIS_2_MOTOR_ID": 128,
+        "AXIS_3_MOTOR_ID": 132,
+        "AXIS_4_MOTOR_ID": 139,
+        "BASE_MOTOR_ID": 89
+    },
+    "E5": {
+        "AXIS_2_MOTOR_ID": 90,
+        "AXIS_3_MOTOR_ID": 90,
+        "AXIS_4_MOTOR_ID": 90,
+        "AXIS_5_MOTOR_ID": 90,
+        "BASE_MOTOR_ID": 90,
+        "PICK_DROP_MOTOR_ID": 90
+    },
+    "Motor_Angle_Offset": {
+        "AXIS_2_MOTOR_ID": 0,
+        "AXIS_3_MOTOR_ID": 128,
+        "AXIS_4_MOTOR_ID": 0,
+        "AXIS_5_MOTOR_ID": 0,
+        "BASE_MOTOR_ID": 0,
+        "PICK_DROP_MOTOR_ID": 0
+    },
+    "Motor_Offset": {
+        "AXIS_2_MOTOR_ID": 119,
+        "AXIS_3_MOTOR_ID": 222,
+        "AXIS_4_MOTOR_ID": 106,
+        "AXIS_5_MOTOR_ID": 114,
+        "BASE_MOTOR_ID": 114,
+        "PICK_DROP_MOTOR_ID": -3
+    }
+}

@@ -1,0 +1,14 @@
+format_version: v1.0
+configName: default
+folderName: t1
+frameworkPath: D:\SVN_Repo\mcc_wless
+processor: WBZ451
+projectName: t1
+settings:
+  PackageFilter: ''
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: dev_packs\Microchip\PIC32CX-BZ_DFP\1.0.107\WBZ451\atdf\WBZ451.atdf
