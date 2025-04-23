@@ -1,4 +1,4 @@
-# aiot_solutions_for_industry_4.0
+# AIoT Solutions For Industry 4.0
 <img src="Doc/IoT-Made-Easy-Logo.png" width=100>
 
 > “Wireless Made Fun!" - IoT Solutions for Industry 4.0
@@ -58,7 +58,7 @@ The automation operations described earlier can only be possible if robot is ful
 - Operate safely to say, support an emergency shut down mode (robot could get stopped in no time)</br>
 - Last but not least, monitor its own environment to prevent future issue: predictive maintenance</br>
 
-To ensure real time operations, with high robustness and security, gateway is based on SAM9X75 MPU running a Linux Operating system, with robust Wifi Link Controller (ATWILC1000) fully tested for interoperability and CE/FCC/IC certified
+To ensure real time operations, with high robustness and security, gateway is based on SAM9X75 MPU running a Linux Operating system, with robust Wifi Link Controller (WILCS02) fully tested for interoperability and CE/FCC/IC certified
 </br></br>
 <img src="Doc/sam9x75_wilsc02.jpg" alt="drawing" width="200"/>
 </br></br>
@@ -69,7 +69,8 @@ WBZ451 supports differnt protocol such as IEEE 802.15.4 PHY based protocols, Mic
 - 2 sensors used for data harvesting 
     - Sensors set-up as “End Device”
     - Sensor 1 acquires the ambient temperature 
-    - Sensor 2 acquires the vibration of arm robot, to implement predictive maintenance 
+    - Sensor 2 acquires the vibration of arm robot, to implement predictive maintenance
+	
 <img src="Doc/demo_network_sam9x.png" alt="drawing" width="560"/></br>
 </br>
 Built for Industry 4.0, this demo is covering 4 use cases:</br>
@@ -87,11 +88,14 @@ Built for Industry 4.0, this demo is covering 4 use cases:</br>
 
 - **Robust by design**</br>
 Multiple options (Wireless SOM, SOM, discrete approach with certified module or full discrete implementation) mitigate your risk, proposing you need based on your application constraints (time to market, RF expertise, cost target…). 
-This approach is reinforced by reference implementation and reference design provided by Microchip. Copy paste, you can’t make it easier. Microchip also have Chip Down Package, for customers using WILC1000/WILC3000 QFN rather than the certified modules.
+This approach is reinforced by reference implementation and reference design provided by Microchip. Copy paste, you can’t make it easier. Microchip also have Chip Down Package, for customers using WILCS02 QFN rather than the certified modules.
+
 </br>
 <img src="Doc/robust_and_secure.png" alt="drawing" width="570"/>
 </br>
+
 SOM remains good strategy to get started in no time, allowing fast prototyping and shorten your learning curve. And in such mitigate one more time risk.
+
 <img src="Doc/som_design.png" alt="drawing" width="570"/>
 
 - **Testing and Certification : one step further for higher robustness**</br>
@@ -102,8 +106,8 @@ Microchip extensively tests silicon, modules & firmware for interoperability and
         - New APs added quarterly</br>
         - Full list <a href="https://www.microchip.com/wi-fi-interoperability" target="_blank">here</a></br>
 <img src="Doc/wifi_interop.png" alt="drawing" width="400"/>
-    - And Microchip certifies its WiFi solutions, see <a href="https://www.microchip.com/wwwproducts/en/ATWILC1000" target="_blank">ATWILC1000 Home Page</a> and <a href="https://www.microchip.com/wwwproducts/en/ATWILC3000" target="_blank">ATWILC3000 Home Page</a></br>
-<img src="Doc/atwilc3000_certifications.png" alt="drawing" width="400"/>
+
+- And Microchip certifies its WiFi solutions, see <a href="https://www.microchip.com/en-us/development-tool/ev74a47a" target="_blank">WILCS02 Home Page</a></b
 
 - **End to end Linux approach for all Microchip products**</br>
 <img src="Doc/smart_connected_secure.png" alt="drawing" width="400"/></br>
@@ -120,12 +124,11 @@ Solution is developed with full system approach, to ensure that every products i
         - Community fixes bugs, adds enhancements between releases
         - Free Linux® kernel 4.14.x, see <a href="https://www.linux4SAM.com" target="_blank">linux4SAM.com</a>
     - Wifi portfolio with dedicated <a href="https://www.microchip.com/mpu" target="_blank">Linux ecosystem</a>
-        - ATWILC1000/ATWILC 3000 Wi-Fi Link Controller Linux User Guide
-        - Linux Driver for WILC1000 & WILC3000
-        - ATWILC Devices Linux Porting Guide
-        - ATWILC1000/3000 Wi-Fi Link Controller Linux Driver Release Notes v15.3
-        - ATWILC1000-SD Evaluation Kit Design Files
-        - ATWILC3000-SD Evaluation Kit Design Files
+        - WILCS02 Wi-Fi Link Controller Linux User Guide
+        - Linux Driver for WILCS02
+        - WILC Devices Linux Porting Guide
+        - WILCS02  Wi-Fi Link Controller Linux Driver Release Notes v3.0
+        - WILCS02  Evaluation Kit Design Files
         - <a href="www.microchip.com/design-centers/wireless-connectivity/embedded-wi-fi/get-started-with-wi-fi-for-linux" target="_blank">Wifi Getting Started for Linux</a>
     - Secure Element solution: <a href="https://www.microchip.com/atecc608a" target="_blank">ATECC608A</a>
         - <a href="https://github.com/MicrochipTech/cryptoauthlib" target="_blank">CryptoAuthLib for a Linux project</a>
@@ -234,18 +237,17 @@ Along <a href="https://microchipdeveloper.com/authentication:trust-platform" tar
 
 <a href="https://www.microchip.com/design-centers/wireless-connectivity/embedded-wi-fi" target="_blank">Wi-Fi Solutions</a></br>
 
-WiFi link controller: <a href="https://www.microchip.com/atwilc1000" target="_blank">ATWILC1000 Home page</a></br>
-Same demonstrator could also work with Microchip combo Wifi + BLE: <a href="https://www.microchip.com/atwilc3000" target="_blank">ATWILC3000 Home page</a></br>
+WiFi link controller: <a href="https://www.microchip.com/en-us/development-tool/ev74a47a" target="_blank">WILCS02  Home page</a></br>
+Same demonstrator could also work with Microchip combo Wifi + BLE: <a href="https://www.microchip.com/en-us/development-tool/ev74a47a" target="_blank">WILCS02  Home page</a></br>
 <img src="Doc/wilc.png" alt="drawing" width="570"/> </br>
 
 For the purpose of this demo, linux4wilc Github repo has been used for getting the WiFi WILC Firmware and Driver:</br>
-- <a href="https://github.com/linux4wilc/firmware" target="_blank">WILC Firmware Version 15.3</a></br>
-- <a href="https://github.com/linux4wilc/driver" target="_blank">WILC Driver 15.3</a></br>
+- <a href="https://github.com/linux4wilc/firmware" target="_blank">WILC Firmware Version 3.0</a></br>
+- <a href="https://github.com/linux4wilc/driver" target="_blank">WILC Driver 3.0</a></br>
 
-<a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en599776" target="_blank">ATWILC1000/ATWILC3000 Wi-Fi Link Controller Linux User Guide</a></br>
+<a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en599776" target="_blank">WILCS02  Wi-Fi Link Controller Linux User Guide</a></br>
 <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/ATWILC-Devices-Linux-Porting-Guide-User-Guide-DS70005329D.pdf" target="_blank">ATWILC Devices Linux Porting Guide</a></br>
-<a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en601491" target="_blank">ATWILC1000-SD Evaluation Kit Design Files</a></br>
-<a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en607651" target="_blank">ATWILC3000-SD Evaluation Kit Design Files</a></br>
+<a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en601491" target="_blank">WILCS02  Evaluation Kit DesignFiles</a></br>
 <a href="https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en606209" target="_blank">ATSAMA5D27 SOM1 Kit1 User Guide</a></br>
 
 #### Zigbee Network<a name="step2d4"></a>
@@ -298,9 +300,9 @@ This development kit will enable one or several of these functions, depending on
     - Cloud connectivity (see use case 2, 3 & 4)</br>
 <img src="Doc/som1-ek.png" alt="drawing" width="320"/></br>
 
-- <a href="https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATWILC1000-SD" target="_blank">1x ATWILC1000-SD</a></br>
-The ATWILC1000-SD evaluation kit is a hardware platform to evaluate the ATWILC1000-MR110PB module. The ATWILC1000-SD is based on the SmartConnect WILC1000, an IEEE 802.11 b/g/n IoT link controller module. It is the ideal add-On to existing MCU solutions bringing WiFi through UART or SPI/SDIO-to-WiFi interface.</br>
-<img src="Doc/atwilc1000-sd.png" alt="drawing" width="320"/></br>
+- <a href="https://www.microchip.com/en-us/development-tool/ev74a47a" target="_blank">1x WILCS02 </a></br>
+The WILCS02 Wi-Fi Link Controller SD Board makes it easy to connect to the cloud using a host MPU running Linux®. This SD board features the WILCS02PE, an IEEE® 802.11 b/g/n IoT link controller module.</br>
+<img src="Doc/WILCS02-sd.png" alt="drawing" width="320"/></br>
 
 - <a href="https://www.microchip.com/en-us/development-tool/EV96B94A" target="_blank">3x PIC32CX-BZ2 and WBZ451 Curiosity Development Board (AC164159)</a></br>
 The PIC32CX-BZ2 and WBZ451 Curiosity Development Board, based on the WBZ451PE module. It comes preconfigured with an out-of-the-box multi-protocol demo application and features a temperature sensor, a current measurement header, an RGB LED and a MikroElectronika mikroBUSTM socket to attach a plethora of sensors and add-on boards.  Used here for our sensors network, monitoring key variables of our application (presence, temperature, vibration…). </br>
