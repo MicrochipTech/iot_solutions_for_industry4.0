@@ -47,7 +47,7 @@ And enjoy this Github session
 
 ### System architecture <a name="step2a"></a>
 
-Main unit (see “SAM9X75 Curiosity” Development Kit) has the following functionalities</br>
+Main unit (see “SAM9X75 / SAM9X60 Curiosity” Development Kit) has the following functionalities</br>
 - First and foremost, it drives the robot operations. This will be here your typical factory automation operations: moving, cutting, bending, pressing or connecting pieces altogether</br>
 - Collecting and processing sensors data</br>
 The automation operations described earlier can only be possible if robot is fully aware of its environment. So, the need of collecting data related to the assembly line environment (input), the operation performed (the output or result of a given operation) but also the robot status </br>
@@ -290,7 +290,10 @@ Part of the well-known “Click board” family, Mikroe’s extension boards wit
 The "SECURE 4 CLICK" includes the ATECC608A, a secure CryptoAuthentication™ device from Microchip. </br>It will bring our system security one step further.</br>
 <img src="Doc/secure4click.png" alt="drawing" width="320"/></br>
 
-- <a href="https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMA5D27-SOM1-EK1" target="_blank">1x SAMA5D27-SOM1-EK1</a></br>
+- <a href="https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMA5D27-SOM1-EK1" target="_blank">1x SAMA5D27-SOM1-EK1</a> / <a href="https://www.microchip.com/en-us/development-tool/ev40e67a" target="_blank">SAM9X60</a> / <a href="https://www.microchip.com/en-us/development-tool/ev31h43a" target="_blank">SAM9X75</a></br>
+
+- ## SAMA5D27
+
 The SAMA5D27 SOM1 Kit1 is a fast prototyping and evaluation platform for the high-performance 32-bit Arm® Cortex®-A5 processor-based MPU from Microchip running up to 500 MHz. Namely, the SAMA5D2-based System in Packages (SiPs) and the SAMA5D27 System-On-Module (SAMA5D27-SOM1). </br>
 This kit comprises a baseboard with a soldered SAMA5D27-SOM1 module. </br>
 This development kit will enable one or several of these functions, depending on the considered use cases (see later paragraph)</br>
@@ -300,9 +303,40 @@ This development kit will enable one or several of these functions, depending on
     - Cloud connectivity (see use case 2, 3 & 4)</br>
 <img src="Doc/som1-ek.png" alt="drawing" width="320"/></br>
 
+- ## SAM9x60
+
+The SAM9X60 Curiosity Development Board is based on the SAM9X60D1G SiP high-performance, low-power ARM926EJ-S CPU-based embedded microprocessor (MPU) running at 600MHz. The SAM9X60D1G Curiosity Development Board small form factor PCB including the SAM9X60D1G (SAM9X60 MPU plus 1Gb integrated DDR2), 4Gbit SLC NAND Flash, a KSZ8081 10/100 Ethernet PHY, and MCP16501 Power Management IC optimized for the module.   It is intended for evaluation of all variants of the SAM9X60 MPU, including the System in Package (SIP) variants and the System on Module (SOM).
+
+<img src="Doc/sam9x60.png" alt="drawing" width="320"/></br>
+
+- ## SAM9x75
+
+The SAM9X75 Curiosity Development Board features a SAM9X75D2G MPU and is the evaluation platform for the SAM9X7 Series MPU devices. The SAM9X75D2G is a high-performance, ultra-low power ARM926EJ-S CPU-based embedded microprocessor (MPU) running up to 800 MHz, with an integrated 2 Gbit DDR3L memory. The device integrates powerful peripherals for connectivity and user interface applications, including MIPI DSI®, LVDS, RGB and 2D graphics, MIPI-CSI-2, Gigabit Ethernet with TSN, USB and CAN-FD. Advanced security functions are offered, such as tamper detection, secure boot, secure key storage, TRNG, PUF as well as high-performance crypto accelerators for AES and SHA.
+
+<img src="Doc/sam9x75.png" alt="drawing" width="320"/></br>
+
 - <a href="https://www.microchip.com/en-us/development-tool/ev74a47a" target="_blank">1x WILCS02 </a></br>
 The WILCS02 Wi-Fi Link Controller SD Board makes it easy to connect to the cloud using a host MPU running Linux®. This SD board features the WILCS02PE, an IEEE® 802.11 b/g/n IoT link controller module.</br>
 <img src="Doc/WILCS02-sd.png" alt="drawing" width="320"/></br>
+
+- <a href="https://www.microchip.com/en-us/development-tool/ev96b94a" target="_blank">3x PIC32CX-BZ2 and WBZ451 Curiosity Development Board </a></br>
+
+- The PIC32CX-BZ2 and WBZ451 Curiosity Board:
+	- Offers integrated programming/debugging features using the PICkit™ On-board 4 (PKOB4) debugger interface
+	- Requires only a Micro USB cable to power-up and program the board
+	- Includes a mikroBUS Click™ header, which helps the users to expand the functionalities by connecting to various MIKROE mikroBUS™ Click board™ add-on boards
+	- Performs rapid prototyping utilizing the Bluetooth LE and Zigbee-enabled RF module
+
+- The PIC32CX-BZ2 and WBZ451 Curiosity Board supports a variety of applications:
+	- Wireless lighting
+	- Home automation or Internet of Things (IoT)
+	- Industrial automation
+	- Other Bluetooth LE or Zigbee-related applications.</br>
+<img src="Doc/wbz451.png" alt="drawing" width="320"/></br>
+
+- <a href="https://www.mikroe.com/6dof-imu-2-click" target="_blank">1x 6DOF IMU 2 Click </a></br>
+6DOF IMU 2 Click is a compact add-on board for enhancing hardware prototypes with 6DOF functionality (6 degrees of freedom). This board features the BMI160, a small low-power inertial measurement unit (IMU) from Bosch Sensortec. It combines a state-of-the-art 3-axis low-g accelerometer and a low-power 3-axis gyroscope designed for 6-axis and 9-axis applications (additional magnetometer connection).</br>
+<img src="Doc/imu2.png" alt="drawing" width="320"/></br>
 
 - <a href="https://www.microchip.com/en-us/development-tool/EV96B94A" target="_blank">3x PIC32CX-BZ2 and WBZ451 Curiosity Development Board (AC164159)</a></br>
 The PIC32CX-BZ2 and WBZ451 Curiosity Development Board, based on the WBZ451PE module. It comes preconfigured with an out-of-the-box multi-protocol demo application and features a temperature sensor, a current measurement header, an RGB LED and a MikroElectronika mikroBUSTM socket to attach a plethora of sensors and add-on boards.  Used here for our sensors network, monitoring key variables of our application (presence, temperature, vibration…). </br>
